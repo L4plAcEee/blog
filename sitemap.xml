@@ -149,13 +149,6 @@
   </url>
   
   <url>
-    <loc>http://www.l4place.icu/tags/%E5%90%8E%E7%AB%AF/</loc>
-    <lastmod>2025-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://www.l4place.icu/tags/hexo/</loc>
     <lastmod>2025-03-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -164,6 +157,13 @@
   
   <url>
     <loc>http://www.l4place.icu/tags/%E5%89%8D%E7%AB%AF/</loc>
+    <lastmod>2025-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.l4place.icu/tags/%E5%90%8E%E7%AB%AF/</loc>
     <lastmod>2025-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
