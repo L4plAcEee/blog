@@ -1,0 +1,922 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>学习周报W07 | L4plAce</title><meta name="author" content="L4plAce"><meta name="copyright" content="L4plAce"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="我深知我对于实践的缺乏，所以更需要奋勇向前。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习周报W07">
+<meta property="og:url" content="http://www.l4place.icu/2025/05/04/%E5%AD%A6%E4%B9%A0%E5%91%A8%E6%8A%A5W07/index.html">
+<meta property="og:site_name" content="L4plAce">
+<meta property="og:description" content="我深知我对于实践的缺乏，所以更需要奋勇向前。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://www.l4place.icu/img/avatar.jpg">
+<meta property="article:published_time" content="2025-05-03T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-05-16T05:36:22.042Z">
+<meta property="article:author" content="L4plAce">
+<meta property="article:tag" content="入门">
+<meta property="article:tag" content="总结">
+<meta property="article:tag" content="碎碎念">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://www.l4place.icu/img/avatar.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "学习周报W07",
+  "url": "http://www.l4place.icu/2025/05/04/%E5%AD%A6%E4%B9%A0%E5%91%A8%E6%8A%A5W07/",
+  "image": "http://www.l4place.icu/img/avatar.jpg",
+  "datePublished": "2025-05-03T16:00:00.000Z",
+  "dateModified": "2025-05-16T05:36:22.042Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "l4place",
+      "url": "http://www.l4place.icu/blog.l4place.icu"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://www.l4place.icu/2025/05/04/%E5%AD%A6%E4%B9%A0%E5%91%A8%E6%8A%A5W07/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//www.clarity.ms"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="codeva-pm3JLit8G2"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?39def90aa4d3003d2e4e8308e7a8c9f3";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+btf.addGlobalFn('pjaxComplete', () => {
+  _hmt.push(['_trackPageview',window.location.pathname])
+}, 'baidu_analytics')
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-18VE0KD5YB"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', 'G-18VE0KD5YB')
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', 'G-18VE0KD5YB', {'page_path': window.location.pathname})
+}, 'google_analytics')
+</script><script>(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "q81b5s7cx2");</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: {"appId":"43KWPP3572","apiKey":"ee8951db0bf1102393ba02871176539f","indexName":"new_blog","hitsPerPage":6,"languages":{"input_placeholder":"搜索文章","hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，耗时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '学习周报W07',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-color: #F5F5DC;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 日志</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/CHANGELOG.html"><i class="fa-fw fas fa-cloud"></i><span> 站点日志</span></a></li><li><a class="site-page child" href="/talking.html"><i class="fa-fw fas fa-comments"></i><span> 技术杂谈</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-compass"></i><span> 导航</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></li><li><a class="site-page child" href="/about.html"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/flink.html"><i class="fa-fw fas fas fa-link"></i><span> 友情链接</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/index_top_img.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">L4plAce</span></a><a class="nav-page-title" href="/"><span class="site-name">学习周报W07</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 日志</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/CHANGELOG.html"><i class="fa-fw fas fa-cloud"></i><span> 站点日志</span></a></li><li><a class="site-page child" href="/talking.html"><i class="fa-fw fas fa-comments"></i><span> 技术杂谈</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-compass"></i><span> 导航</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></li><li><a class="site-page child" href="/about.html"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/flink.html"><i class="fa-fw fas fas fa-link"></i><span> 友情链接</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">学习周报W07</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-05-03T16:00:00.000Z" title="发表于 2025-05-04 00:00:00">2025-05-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-05-16T05:36:22.042Z" title="更新于 2025-05-16 13:36:22">2025-05-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">11.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>43分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><div id="post-outdate-notice" data="{&quot;limitDay&quot;:365,&quot;messagePrev&quot;:&quot;自上次更新已经过了&quot;,&quot;messageNext&quot;:&quot;天，文章内容可能过期了哦！&quot;,&quot;postUpdate&quot;:&quot;2025-05-16 13:36:22&quot;}" hidden></div><h1 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h1><p>对于 每日算法 的计划 的创立而展现的成果，<br>虽然不能说喜人，但是也是能看到成效的。<br>我深知我对于实践的缺乏，所以更需要奋勇向前。<br>而在此过程中，去领悟，去突破，去铸造自己的个人哲学。</p>
+<h1 id="理论学习：背包dp-01背包、有依赖的背包"><a href="#理论学习：背包dp-01背包、有依赖的背包" class="headerlink" title="理论学习：背包dp-01背包、有依赖的背包"></a>理论学习：背包dp-01背包、有依赖的背包</h1><h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1NN41137jF?vd_source=b235e9c478ba07e2678b1ac01bb439c6">【算法讲解073【必备】背包dp-01背包、有依赖的背包】</a></p>
+</blockquote>
+<p>前置知识:<br>讲解067、讲解068 - 二维动态规划及其空间压缩技巧<br>【必备】课程的动态规划大专题从讲解066开始，建议从头开始学习会比较系统</p>
+<p>本节课讲述：<br>01背包：每个物品 要和不要 两种可能性展开<br>有依赖的背包：多个物品变成一个复合物品（互斥），每件复合物品 不要和怎么要 多种可能性展开<br>时间复杂度O(物品个数 * 背包容量)，额外空间复杂度O(背包容量)<br>不能用01背包来解，但是非常重要的问题：非负数组前k个最小的子序列和问题</p>
+<p>注意：<br>讲解069已经讲了多维费用背包</p>
+<h2 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h2><h3 id="题目1-01背包-模版"><a href="#题目1-01背包-模版" class="headerlink" title="题目1 01背包(模版)"></a>题目1 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1048">01背包(模版)</a></h3><p>给定一个正数t，表示背包的容量<br>有n个货物，每个货物可以选择1次<br>每个货物有自己体积$costs[i]$和价值$values[i]$<br>返回在不超过总容量的情况下，怎么挑选货物能达到价值最大<br>返回最大的价值</p>
+<h4 id="提交-1"><a href="#提交-1" class="headerlink" title="提交#1 &lt;-AC"></a>提交#1 &lt;-AC</h4><h5 id="关键代码"><a href="#关键代码" class="headerlink" title="关键代码"></a>关键代码</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">dp</span>(M + <span class="number">1</span>, <span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;(T + <span class="number">1</span>, <span class="number">0</span>));</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= M; ++i) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt;= T; ++j) &#123;</span><br><span class="line">        <span class="keyword">if</span> (j - cost[i] &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">            dp[i][j] = <span class="built_in">max</span>(dp[i - <span class="number">1</span>][j], dp[i - <span class="number">1</span>][j - cost[i]] + value[i]);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            dp[i][j] = dp[i - <span class="number">1</span>][j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">cout &lt;&lt; dp[M][T] &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<h5 id="关键点"><a href="#关键点" class="headerlink" title="关键点"></a>关键点</h5><ol>
+<li>在读入物品的循环：<br> 你写的是 <code>i &lt; M</code>，**实际上应该是 <code>i &lt;= M</code>**。因为题目一般给的是 <strong>M个物品</strong>，编号从1到M。如果只读到 M-1 个，那最后一个物品的数据就没读进去，后续 <code>dp</code> 也会出问题。</li>
+<li>在动态规划转移部分：<br> 如果 <code>j &lt; cost[i]</code>，即容量不足以放第i件物品，那么你的代码其实<strong>没有给 <code>dp[i][j]</code> 赋值</strong>，它默认为初始化值（0），这显然是错的。应该显式继承。</li>
+</ol>
+<h4 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h4><p>可以优化空间，但是懒得写了。</p>
+<h3 id="题目2-夏季特惠"><a href="#题目2-夏季特惠" class="headerlink" title="题目2 夏季特惠"></a>题目2 <a target="_blank" rel="noopener" href="https://leetcode.cn/problems/tJau2o/">夏季特惠</a></h3><p>某公司游戏平台的夏季特惠开始了，你决定入手一些游戏<br>现在你一共有X元的预算，平台上所有的 n 个游戏均有折扣<br>标号为 i 的游戏的原价 $a_i$ 元，现价只要 $b_i$ 元<br>也就是说该游戏可以优惠 $a_i - b_i$，并且你购买该游戏能获得快乐值为 $w_i$<br>由于优惠的存在，你可能做出一些冲动消费导致最终买游戏的总费用超过预算<br>只要满足 : 获得的总优惠金额&gt;&#x3D;超过预算的总金额<br>那在心理上就不会觉得吃亏<br>现在你希望在心理上不觉得吃亏的前提下，获得尽可能多的快乐值。</p>
+<h4 id="思路复现"><a href="#思路复现" class="headerlink" title="思路复现"></a>思路复现</h4><p>总优惠 &gt;&#x3D; 总超支</p>
+<p>$(a_i - b_i) - b_i&gt;&#x3D; 0$ 说明该商品可以给 总优惠 贡献，这一类商品是一定要买的。<br>$(a_i - b_i) - b_i&lt; 0$ 说明该商品会消耗 总优惠，这一类商品待定。</p>
+<p>在我们统计了所有 一定要买的商品 之后，剩下的待定商品则转化为0-1背包问题</p>
+<h4 id="提交-1-1"><a href="#提交-1-1" class="headerlink" title="提交#1 &lt;-AC"></a>提交#1 &lt;-AC</h4><h5 id="关键代码-1"><a href="#关键代码-1" class="headerlink" title="关键代码"></a>关键代码</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    cin &gt;&gt; n &gt;&gt; X;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> sum1 = <span class="number">0</span>;</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">items</span><span class="params">(<span class="number">1</span>, <span class="number">0</span>)</span></span>;</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">hap</span><span class="params">(<span class="number">1</span>, <span class="number">0</span>)</span></span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>, ai, bi, wi; i &lt; n; ++i) &#123;</span><br><span class="line">        cin &gt;&gt; ai &gt;&gt; bi &gt;&gt; wi;</span><br><span class="line">        <span class="keyword">if</span> ((ai - bi) - bi &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">            sum1 += wi;</span><br><span class="line">            X += ai - bi - bi;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            items.<span class="built_in">push_back</span>(-(ai - bi - bi));</span><br><span class="line">            hap.<span class="built_in">push_back</span>(wi);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">dp</span>(items.<span class="built_in">size</span>(), <span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;(X + <span class="number">1</span>, <span class="number">0</span>));</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; items.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt;= X; ++j) &#123;</span><br><span class="line">            <span class="keyword">if</span> (j - items[i] &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">                dp[i][j] = <span class="built_in">max</span>(dp[i - <span class="number">1</span>][j], dp[i - <span class="number">1</span>][j - items[i]] + hap[i]);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                dp[i][j] = dp[i - <span class="number">1</span>][j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; sum1 + dp[items.<span class="built_in">size</span>() - <span class="number">1</span>][X];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="关键点-1"><a href="#关键点-1" class="headerlink" title="关键点"></a>关键点</h5><ol>
+<li>注意边界</li>
+<li>还有就是items装的东西别搞错了</li>
+<li>傻卵leetcode卡我数据卡半天</li>
+</ol>
+<h3 id="题目3-目标和"><a href="#题目3-目标和" class="headerlink" title="题目3 目标和"></a>题目3 <a target="_blank" rel="noopener" href="https://leetcode.cn/problems/target-sum/">目标和</a></h3><p>给你一个非负整数数组 nums 和一个整数 target 。<br>向数组中的每个整数前添加 ‘+’ 或 ‘-‘ ，然后串联起所有整数<br>可以构造一个表达式<br>例如nums&#x3D;$[2, 1]$，可以在2之前添加’+’ ，在1之前添加’-‘<br>然后串联起来得到表达式 “+2-1” 。<br>返回可以通过上述方法构造的，运算结果等于 target 的不同表达式的数目</p>
+<h4 id="思路-0"><a href="#思路-0" class="headerlink" title="思路#0"></a>思路#0</h4><h5 id="关键代码-2"><a href="#关键代码-2" class="headerlink" title="关键代码"></a>关键代码</h5><p>直接递归搜索的版本</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">f1</span><span class="params">(vector&lt;<span class="type">int</span>&gt; &amp;nums, <span class="type">int</span> target, <span class="type">int</span> idx, <span class="type">int</span> sum)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (idx == nums.<span class="built_in">size</span>()) &#123;</span><br><span class="line">		<span class="keyword">return</span> sum == target ? <span class="number">1</span> : <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">f1</span>(nums, target, idx + <span class="number">1</span>, sum + nums[idx]) + <span class="built_in">f1</span>(nums, target, idx + <span class="number">1</span>, sum - nums[idx]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="关键点-2"><a href="#关键点-2" class="headerlink" title="关键点"></a>关键点</h5><p>通过传递可变参数 idx 和 sum 控制递归行为。<br>设置 basecase -&gt; idx &#x3D;&#x3D; nums.size()<br>并判断 是否收获答案，即判断是否 sum &#x3D;&#x3D; target </p>
+<h4 id="思路-1"><a href="#思路-1" class="headerlink" title="思路#1"></a>思路#1</h4><h5 id="关键代码-3"><a href="#关键代码-3" class="headerlink" title="关键代码"></a>关键代码</h5><p>记忆化搜索</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">f2</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums, <span class="type">int</span> target, <span class="type">int</span> idx, <span class="type">int</span> sum, unordered_map&lt;<span class="type">int</span>, unordered_map&lt;<span class="type">int</span>, <span class="type">int</span>&gt;&gt;&amp; dp)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (idx == nums.<span class="built_in">size</span>()) &#123;</span><br><span class="line">		<span class="keyword">return</span> sum == target ? <span class="number">1</span> : <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span> (dp.<span class="built_in">count</span>(idx) &amp;&amp; dp[idx].<span class="built_in">count</span>(sum)) &#123;</span><br><span class="line">		<span class="keyword">return</span> dp[idx][sum];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> ans = <span class="built_in">f2</span>(nums, target, idx + <span class="number">1</span>, sum + nums[idx], dp)</span><br><span class="line">			+ <span class="built_in">f2</span>(nums, target, idx + <span class="number">1</span>, sum - nums[idx], dp);</span><br><span class="line">	dp[idx][sum] = ans;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="关键点-3"><a href="#关键点-3" class="headerlink" title="关键点"></a>关键点</h5><p>通过建立二级索引：<br>idx -&gt; sum -&gt; ans<br>查表，建立表格。<br>值得一提的是在cpp中用count进行key检查是一个写法。</p>
+<h4 id="思路-2"><a href="#思路-2" class="headerlink" title="思路#2"></a>思路#2</h4><p>动态规划</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">findTargetSumWays3</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums, <span class="type">int</span> target)</span> </span>&#123;</span><br><span class="line">	<span class="type">int</span> s = <span class="built_in">reduce</span>(nums.<span class="built_in">begin</span>(), nums.<span class="built_in">end</span>(), <span class="number">0</span>);</span><br><span class="line">	<span class="keyword">if</span> (target &lt; -s || target &gt; s) &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> n = nums.<span class="built_in">size</span>(), m = <span class="number">2</span> * s + <span class="number">1</span>;</span><br><span class="line">	vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">dp</span>(n + <span class="number">1</span>, <span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;(m, <span class="number">0</span>));</span><br><span class="line">	dp[n][target + s] = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = n - <span class="number">1</span>; i &gt;= <span class="number">0</span>; --i) &#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> j = -s; j &lt;= s; ++j) &#123;</span><br><span class="line">			<span class="keyword">if</span> (j + nums[i] + s &lt; m) &#123;</span><br><span class="line">				dp[i][j + s] = dp[i + <span class="number">1</span>][j + nums[i] + s];</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (j - nums[i] + s &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">				dp[i][j + s] += dp[i + <span class="number">1</span>][j - nums[i] + s];</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> dp[<span class="number">0</span>][s];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="关键点-4"><a href="#关键点-4" class="headerlink" title="关键点"></a>关键点</h5><p>通过偏移将负数索引转化为正数索引，从而转化为正常dp问题<br>$原本的dp[i][j]含义:$<br>$nums[0…i-1]范围上，已经形成的累加和是sum$<br>$nums[i…]范围上，每个数字可以标记+或者-$<br>$最终形成累加和为target的不同表达式数目$<br>$因为sum可能为负数，为了下标不出现负数，$<br>$原本的dp[i][j]由dp表中的dp[i][j + s]来表示$<br>$也就是平移操作！$<br>$一切”原本的dp[i][j]”一律平移到dp表中的dp[i][j + s]$</p>
+<h4 id="思路-3"><a href="#思路-3" class="headerlink" title="思路#3"></a>思路#3</h4><h5 id="关键代码-4"><a href="#关键代码-4" class="headerlink" title="关键代码"></a>关键代码</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">findTargetSumWays</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums, <span class="type">int</span> target)</span> </span>&#123;</span><br><span class="line">	<span class="type">int</span> sum = <span class="built_in">reduce</span>(nums.<span class="built_in">begin</span>(), nums.<span class="built_in">end</span>(), <span class="number">0</span>);</span><br><span class="line">	<span class="keyword">return</span> (sum &lt; target || ((target &amp; <span class="number">1</span>) ^ (sum &amp; <span class="number">1</span>)) == <span class="number">1</span>) ? <span class="number">0</span> : <span class="built_in">subsets</span>(nums, (target + sum) &gt;&gt; <span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">subsets</span><span class="params">(vector&lt;<span class="type">int</span>&gt; &amp;nums, <span class="type">int</span> t)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (t &lt; <span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	<span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">dp</span><span class="params">(t + <span class="number">1</span>, <span class="number">0</span>)</span></span>;</span><br><span class="line">	dp[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> num : nums) &#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> j = t; j &gt;= num; j--) &#123;</span><br><span class="line">			dp[j] += dp[j - num];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> dp[t];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="关键点-5"><a href="#关键点-5" class="headerlink" title="关键点"></a>关键点</h5><p>新思路，转化为01背包问题<br>思考1:<br>虽然题目说nums是非负数组，但即使nums中有负数比如$[3,-4,2]$<br>因为能在每个数前面用+或者-号<br>所以$[3,-4,2]$其实和$[3,4,2]$会达成一样的结果<br>所以即使nums中有负数，也可以把负数直接变成正数，也不会影响结果<br>思考2:<br>如果nums都是非负数，并且所有数的累加和是sum<br>那么如果target&gt;sum，很明显没有任何方法可以达到target，可以直接返回0<br>思考3:<br>nums内部的数组，不管怎么+和-，最终的结果都一定不会改变奇偶性<br>所以，如果所有数的累加和是sum，并且与target的奇偶性不一样<br>那么没有任何方法可以达到target，可以直接返回0<br>思考4(最重要):<br>比如说给定一个数组, nums &#x3D; $[1, 2, 3, 4, 5]$ 并且 target &#x3D; 3<br>其中一个方案是 : +1 -2 +3 -4 +5 &#x3D; 3<br>该方案中取了正的集合为A &#x3D; {1，3，5}<br>该方案中取了负的集合为B &#x3D; {2，4}<br>所以任何一种方案，都一定有 sum(A) - sum(B) &#x3D; target<br>现在我们来处理一下这个等式，把左右两边都加上sum(A) + sum(B)，那么就会变成如下：<br>sum(A) - sum(B) + sum(A) + sum(B) &#x3D; target + sum(A) + sum(B)<br>2 * sum(A) &#x3D; target + 数组所有数的累加和<br>sum(A) &#x3D; (target + 数组所有数的累加和) &#x2F; 2<br>也就是说，任何一个集合，只要累加和是(target + 数组所有数的累加和) &#x2F; 2<br>那么就一定对应一种target的方式<br>比如非负数组nums，target &#x3D; 1, nums所有数累加和是11<br>求有多少方法组成1，其实就是求，有多少种子集累加和达到6的方法，(1+11)&#x2F;2&#x3D;6<br>因为，子集累加和6 - 另一半的子集累加和5 &#x3D; 1(target)<br>所以有多少个累加和为6的不同集合，就代表有多少个target &#x3D;&#x3D; 1的表达式数量</p>
+<p>至此已经转化为01背包问题了</p>
+<h3 id="题目4-最后一块石头的重量-II"><a href="#题目4-最后一块石头的重量-II" class="headerlink" title="题目4 最后一块石头的重量 II"></a>题目4 <a target="_blank" rel="noopener" href="https://leetcode.cn/problems/last-stone-weight-ii/">最后一块石头的重量 II</a></h3><p>有一堆石头，用整数数组 stones 表示，其中 stones$[i]$ 表示第 i 块石头的重量<br>每一回合，从中选出任意两块石头，然后将它们一起粉碎<br>假设石头的重量分别为 x 和 y，且 x &lt;&#x3D; y<br>那么粉碎的可能结果如下：<br>如果 x &#x3D;&#x3D; y，那么两块石头都会被完全粉碎；<br>如果 x !&#x3D; y，那么重量为 x 的石头将会完全粉碎，而重量为 y 的石头新重量为 y-x<br>最后，最多只会剩下一块 石头，返回此石头 最小的可能重量<br>如果没有石头剩下，就返回 0</p>
+<h4 id="思路-0-1"><a href="#思路-0-1" class="headerlink" title="思路#0"></a>思路#0</h4><p>问题转化为：划分两个 集合 $Set(A)$ 和 $Set(B)$，然后<br>-&gt;<br>让两个集合的元素和的差值最小<br>-&gt;<br>尽量接近总数组的累加和的一半<br>-&gt;<br>子集和问题<br>-&gt;<br>DP求解<br>-&gt;<br>0-1背包问题模型</p>
+<h5 id="关键代码-5"><a href="#关键代码-5" class="headerlink" title="关键代码"></a>关键代码</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">lastStoneWeightII</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; stones)</span> </span>&#123;</span><br><span class="line">	<span class="type">int</span> sum = <span class="built_in">reduce</span>(stones.<span class="built_in">begin</span>(), stones.<span class="built_in">end</span>(), <span class="number">0</span>);</span><br><span class="line">	<span class="type">int</span> n = <span class="built_in">near</span>(stones, sum/<span class="number">2</span>);</span><br><span class="line">	<span class="keyword">return</span> sum - n - n;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">near</span><span class="params">(vector&lt;<span class="type">int</span>&gt; &amp;nums, <span class="type">int</span> t)</span> </span>&#123;</span><br><span class="line">	<span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">dp</span><span class="params">(t + <span class="number">1</span>, <span class="number">0</span>)</span></span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">auto</span> &amp;num : nums) &#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> j = t; j &gt;= num; j--) &#123;</span><br><span class="line">			<span class="comment">// 直接是空间压缩的版本</span></span><br><span class="line">			dp[j] = std::<span class="built_in">max</span>(dp[j], dp[j - num] + num);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> dp[t];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="题目5-有依赖的背包-模版"><a href="#题目5-有依赖的背包-模版" class="headerlink" title="题目5 有依赖的背包(模版)"></a>题目5 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1064">有依赖的背包(模版)</a></h3><p>物品分为两大类：主件和附件<br>主件购买没有限制，钱够就可以；附件购买有限制，该附件所归属的主件先购买，才能购买这个附件<br>例如，若想买打印机或扫描仪这样的附件，必须先购买电脑这个主件。以下是一些主件及其附件的展示：<br>电脑：打印机，扫描仪 | 书柜：图书 | 书桌：台灯，文具 | 工作椅：无附件<br>每个主件最多有2个附件，并且附件不会再有附件，主件购买后，怎么去选择归属附件完全随意，钱够就可以<br>所有的物品编号都在1~m之间，每个物品有三个信息：价格v、重要度p、归属q<br>价格就是花费，价格 * 重要度 就是收益，归属就是该商品是依附于哪个编号的主件<br>比如一件商品信息为$[300,2,6]$，花费300，收益600，该商品是6号主件商品的附件<br>再比如一件商品信息$[100,4,0]$，花费100，收益400，该商品自身是主件(q &#x3D;&#x3D; 0)<br>给定m件商品的信息，给定总钱数n，返回在不违反购买规则的情况下最大的收益</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.nowcoder.com/practice/f9c6f980eeec43ef85be20755ddbeaf4">另一个测试链接</a></p>
+</blockquote>
+<h4 id="思路-0-2"><a href="#思路-0-2" class="headerlink" title="思路#0"></a>思路#0</h4><p>跟普通0-1背包问题模型的区别在于：<br>对每个物品的选择从简单的<br>要 or 不要<br>-&gt;<br>怎么要</p>
+<p>例如：（样例#1）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1000 5</span><br><span class="line">800 2 0</span><br><span class="line">400 5 1</span><br><span class="line">300 5 1</span><br><span class="line">400 3 0</span><br><span class="line">500 2 0</span><br></pre></td></tr></table></figure>
+<p>转化为表格可见：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>价格</th>
+<th>重要度</th>
+<th>依赖</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>item1</td>
+<td>800</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr>
+<td>item2</td>
+<td>400</td>
+<td>5</td>
+<td>1</td>
+</tr>
+<tr>
+<td>item3</td>
+<td>300</td>
+<td>5</td>
+<td>1</td>
+</tr>
+<tr>
+<td>item4</td>
+<td>400</td>
+<td>3</td>
+<td>0</td>
+</tr>
+<tr>
+<td>item5</td>
+<td>500</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr>
+<td>对于 主件{1, 4, 5}而言：</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>对于 1： 情况有 要 or 不要 1，在要 1 之后，还要面临：要不要 2 or 3？</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>对于 4： 情况只有 要 or 不要 4</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>对于 5： 情况只有要 or 不要 5</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>所以这个模型可以被称作：<br><del>0-1背包问题模型</del><br>多分支背包问题模型<br>在 0-1背包问题模型 的基础上，我们需要对 每个物品 的下级不同情况求得一个最优解，而这便是 这个物品 的DP值。</p>
+<h5 id="关键代码-6"><a href="#关键代码-6" class="headerlink" title="关键代码"></a>关键代码</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 空间压缩 + 附件组合法</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">DP</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= m; ++i) &#123;</span><br><span class="line">        <span class="keyword">if</span> (king[i]) &#123;</span><br><span class="line">            <span class="type">int</span> fan1 = fans[i] &gt;= <span class="number">1</span> ? follows[i][<span class="number">0</span>] : <span class="number">-1</span>;</span><br><span class="line">            <span class="type">int</span> fan2 = fans[i] &gt;= <span class="number">2</span> ? follows[i][<span class="number">1</span>] : <span class="number">-1</span>;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = n; j &gt;= <span class="number">0</span>; --j) &#123;</span><br><span class="line">                <span class="comment">// 主件</span></span><br><span class="line">                <span class="keyword">if</span> (j &gt;= cost[i])</span><br><span class="line">                    dp[j] = <span class="built_in">max</span>(dp[j], dp[j - cost[i]] + val[i]);</span><br><span class="line"></span><br><span class="line">                <span class="comment">// 主件 + 附件1</span></span><br><span class="line">                <span class="keyword">if</span> (fan1 != <span class="number">-1</span> &amp;&amp; j &gt;= cost[i] + cost[fan1])</span><br><span class="line">                    dp[j] = <span class="built_in">max</span>(dp[j], dp[j - cost[i] - cost[fan1]] + val[i] + val[fan1]);</span><br><span class="line"></span><br><span class="line">                <span class="comment">// 主件 + 附件2</span></span><br><span class="line">                <span class="keyword">if</span> (fan2 != <span class="number">-1</span> &amp;&amp; j &gt;= cost[i] + cost[fan2])</span><br><span class="line">                    dp[j] = <span class="built_in">max</span>(dp[j], dp[j - cost[i] - cost[fan2]] + val[i] + val[fan2]);</span><br><span class="line"></span><br><span class="line">                <span class="comment">// 主件 + 附件1 + 附件2</span></span><br><span class="line">                <span class="keyword">if</span> (fan1 != <span class="number">-1</span> &amp;&amp; fan2 != <span class="number">-1</span> &amp;&amp; j &gt;= cost[i] + cost[fan1] + cost[fan2])</span><br><span class="line">                    dp[j] = <span class="built_in">max</span>(dp[j], dp[j - cost[i] - cost[fan1] - cost[fan2]] + val[i] + val[fan1] + val[fan2]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> dp[n];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="题目6-非负数组前k个最小的子序列累加和"><a href="#题目6-非负数组前k个最小的子序列累加和" class="headerlink" title="题目6 非负数组前k个最小的子序列累加和"></a>题目6 非负数组前k个最小的子序列累加和</h3><p>给定一个数组nums，含有n个数字，都是非负数<br>给定一个正数k，返回所有子序列中累加和最小的前k个累加和<br>子序列是包含空集的<br>1 &lt;&#x3D; n &lt;&#x3D; 10^5<br>1 &lt;&#x3D; nums$[i]$ &lt;&#x3D; 10^6<br>1 &lt;&#x3D; k &lt;&#x3D; 10^5<br>注意这个数据量，用01背包的解法是不行的，时间复杂度太高了<br>对数器验证</p>
+<p>时间复杂度O(n<em>logn) + O(k</em>logk)，额外空间复杂度O(k)</p>
+<p>讲解025 ~ 讲解027 - 堆</p>
+<h5 id="关键代码-7"><a href="#关键代码-7" class="headerlink" title="关键代码"></a>关键代码</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 非负数组前 k 个最小的子序列累加和</span></span><br><span class="line"><span class="comment">// 给定一个数组 nums（非负数）、一个正数 k，返回所有子序列中累加和最小的前 k 个累加和。</span></span><br><span class="line"><span class="comment">// 子序列包括空集。</span></span><br><span class="line"><span class="comment">// n 可能很大，暴力或 0/1 背包方法在大数据下不可行，最终我们用堆优化到 O(n log n + k log k)。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 暴力方法（仅用于对数器验证）</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">f1</span><span class="params">(<span class="type">const</span> vector&lt;<span class="type">int</span>&gt;&amp; nums, <span class="type">int</span> idx, <span class="type">long</span> <span class="type">long</span> sum, vector&lt;<span class="type">long</span> <span class="type">long</span>&gt;&amp; ans)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (idx == (<span class="type">int</span>)nums.<span class="built_in">size</span>()) &#123;</span><br><span class="line">        ans.<span class="built_in">push_back</span>(sum);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment">// 不选 nums[idx]</span></span><br><span class="line">        <span class="built_in">f1</span>(nums, idx + <span class="number">1</span>, sum, ans);</span><br><span class="line">        <span class="comment">// 选 nums[idx]</span></span><br><span class="line">        <span class="built_in">f1</span>(nums, idx + <span class="number">1</span>, sum + nums[idx], ans);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">vector&lt;<span class="type">long</span> <span class="type">long</span>&gt; <span class="title">topKSum1</span><span class="params">(<span class="type">const</span> vector&lt;<span class="type">int</span>&gt;&amp; nums, <span class="type">int</span> k)</span> </span>&#123;</span><br><span class="line">    vector&lt;<span class="type">long</span> <span class="type">long</span>&gt; all;</span><br><span class="line">    <span class="built_in">f1</span>(nums, <span class="number">0</span>, <span class="number">0</span>, all);</span><br><span class="line">    <span class="built_in">sort</span>(all.<span class="built_in">begin</span>(), all.<span class="built_in">end</span>());</span><br><span class="line">    <span class="keyword">if</span> ((<span class="type">int</span>)all.<span class="built_in">size</span>() &gt; k) all.<span class="built_in">resize</span>(k);</span><br><span class="line">    <span class="keyword">return</span> all;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 0/1 背包方法（数据量大时不可行，仅用于对数器）</span></span><br><span class="line"><span class="function">vector&lt;<span class="type">long</span> <span class="type">long</span>&gt; <span class="title">topKSum2</span><span class="params">(<span class="type">const</span> vector&lt;<span class="type">int</span>&gt;&amp; nums, <span class="type">int</span> k)</span> </span>&#123;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> total = <span class="built_in">accumulate</span>(nums.<span class="built_in">begin</span>(), nums.<span class="built_in">end</span>(), <span class="number">0LL</span>);</span><br><span class="line">    <span class="function">vector&lt;<span class="type">long</span> <span class="type">long</span>&gt; <span class="title">dp</span><span class="params">(total + <span class="number">1</span>, <span class="number">0</span>)</span></span>;</span><br><span class="line">    dp[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> num : nums) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">long</span> <span class="type">long</span> j = total; j &gt;= num; --j) &#123;</span><br><span class="line">            dp[j] += dp[j - num];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    vector&lt;<span class="type">long</span> <span class="type">long</span>&gt; ans;</span><br><span class="line">    ans.<span class="built_in">reserve</span>(k);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">long</span> <span class="type">long</span> sum = <span class="number">0</span>; sum &lt;= total &amp;&amp; (<span class="type">int</span>)ans.<span class="built_in">size</span>() &lt; k; ++sum) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">long</span> <span class="type">long</span> cnt = <span class="number">0</span>; cnt &lt; dp[sum] &amp;&amp; (<span class="type">int</span>)ans.<span class="built_in">size</span>() &lt; k; ++cnt) &#123;</span><br><span class="line">            ans.<span class="built_in">push_back</span>(sum);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 最优解：使用小顶堆，O(n log n + k log k)</span></span><br><span class="line"><span class="function">vector&lt;<span class="type">long</span> <span class="type">long</span>&gt; <span class="title">topKSum3</span><span class="params">(vector&lt;<span class="type">int</span>&gt; nums, <span class="type">int</span> k)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">sort</span>(nums.<span class="built_in">begin</span>(), nums.<span class="built_in">end</span>());</span><br><span class="line">    <span class="type">int</span> n = nums.<span class="built_in">size</span>();</span><br><span class="line">    <span class="comment">// 堆元素：(当前子序列最右下标 right, 当前和 sum)</span></span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">Node</span> &#123; <span class="type">int</span> right; <span class="type">long</span> <span class="type">long</span> sum; &#125;;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">Cmp</span> &#123; <span class="function"><span class="type">bool</span> <span class="title">operator</span><span class="params">()</span><span class="params">(Node <span class="type">const</span>&amp; a, Node <span class="type">const</span>&amp; b)</span> <span class="type">const</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> a.sum &gt; b.sum;</span><br><span class="line">    &#125;&#125;;</span><br><span class="line">    priority_queue&lt;Node, vector&lt;Node&gt;, Cmp&gt; heap;</span><br><span class="line">    <span class="function">vector&lt;<span class="type">long</span> <span class="type">long</span>&gt; <span class="title">ans</span><span class="params">(k)</span></span>;</span><br><span class="line">    <span class="comment">// 空集的和为 0</span></span><br><span class="line">    ans[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">// 如果数组非空，先将包含第一个元素的子序列加入堆</span></span><br><span class="line">    <span class="keyword">if</span> (n &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        heap.<span class="built_in">push</span>(&#123;<span class="number">0</span>, nums[<span class="number">0</span>]&#125;);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; k; ++i) &#123;</span><br><span class="line">        <span class="keyword">if</span> (heap.<span class="built_in">empty</span>()) <span class="keyword">break</span>;</span><br><span class="line">        Node cur = heap.<span class="built_in">top</span>(); heap.<span class="built_in">pop</span>();</span><br><span class="line">        <span class="type">int</span> r = cur.right;</span><br><span class="line">        <span class="type">long</span> <span class="type">long</span> s = cur.sum;</span><br><span class="line">        ans[i] = s;</span><br><span class="line">        <span class="comment">// 两种扩展：</span></span><br><span class="line">        <span class="comment">// 1) 用当前子序列去掉 nums[r]，加入 nums[r+1]</span></span><br><span class="line">        <span class="comment">// 2) 在当前子序列基础上再加 nums[r+1]</span></span><br><span class="line">        <span class="keyword">if</span> (r + <span class="number">1</span> &lt; n) &#123;</span><br><span class="line">            <span class="comment">// 替换</span></span><br><span class="line">            heap.<span class="built_in">push</span>(&#123;r + <span class="number">1</span>, s - nums[r] + nums[r + <span class="number">1</span>]&#125;);</span><br><span class="line">            <span class="comment">// 追加</span></span><br><span class="line">            heap.<span class="built_in">push</span>(&#123;r + <span class="number">1</span>, s + nums[r + <span class="number">1</span>]&#125;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 随机数组生成（对数器）</span></span><br><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">randomArray</span><span class="params">(<span class="type">int</span> len, <span class="type">int</span> value)</span> </span>&#123;</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">ans</span><span class="params">(len)</span></span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; len; ++i) &#123;</span><br><span class="line">        ans[i] = <span class="built_in">rand</span>() % value;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 数组比较</span></span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">equals</span><span class="params">(<span class="type">const</span> vector&lt;<span class="type">long</span> <span class="type">long</span>&gt;&amp; a, <span class="type">const</span> vector&lt;<span class="type">long</span> <span class="type">long</span>&gt;&amp; b)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (a.<span class="built_in">size</span>() != b.<span class="built_in">size</span>()) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">size_t</span> i = <span class="number">0</span>; i &lt; a.<span class="built_in">size</span>(); ++i)</span><br><span class="line">        <span class="keyword">if</span> (a[i] != b[i]) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">srand</span>((<span class="type">unsigned</span>)<span class="built_in">time</span>(<span class="literal">nullptr</span>));</span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> N = <span class="number">15</span>, V = <span class="number">40</span>, TESTS = <span class="number">5000</span>;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;测试开始\n&quot;</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> t = <span class="number">0</span>; t &lt; TESTS; ++t) &#123;</span><br><span class="line">        <span class="type">int</span> len = <span class="built_in">rand</span>() % N + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">auto</span> nums = <span class="built_in">randomArray</span>(len, V);</span><br><span class="line">        <span class="type">int</span> maxMask = (<span class="number">1</span> &lt;&lt; len) - <span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> k = <span class="built_in">rand</span>() % maxMask + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">auto</span> ans1 = <span class="built_in">topKSum1</span>(nums, k);</span><br><span class="line">        <span class="keyword">auto</span> ans2 = <span class="built_in">topKSum2</span>(nums, k);</span><br><span class="line">        <span class="keyword">auto</span> ans3 = <span class="built_in">topKSum3</span>(nums, k);</span><br><span class="line">        <span class="keyword">if</span> (!<span class="built_in">equals</span>(ans1, ans2) || !<span class="built_in">equals</span>(ans1, ans3)) &#123;</span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;出错了！\n&quot;</span>;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;测试结束\n&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="每日算法"><a href="#每日算法" class="headerlink" title="每日算法"></a>每日算法</h1><h2 id="Daily-算法-P1002-NOIP-2002-普及组-过河卒"><a href="#Daily-算法-P1002-NOIP-2002-普及组-过河卒" class="headerlink" title="Daily::算法 @P1002 [NOIP 2002 普及组] 过河卒"></a>Daily::算法 @<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1002">P1002 [NOIP 2002 普及组] 过河卒</a></h2><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>棋盘上 A 点有一个过河卒，需要走到目标 B 点。卒行走的规则：可以向下、或者向右。同时在棋盘上 C 点有一个对方的马，该马所在的点和所有跳跃一步可达的点称为对方马的控制点。因此称之为“马拦过河卒”。</p>
+<p>棋盘用坐标表示，A 点 (0,0)、B 点 (n,m)，同样马的位置坐标是需要给出的。</p>
+<p><img src="/img/assets/cc816d6c670102ffd2b93b60dc128af1_MD5.png"></p>
+<p>现在要求你计算出卒从 A 点能够到达 B 点的路径的条数，假设马的位置是固定不动的，并不是卒走一步马走一步。 </p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>DFS + 剪枝？</p>
+<h3 id="提交-0"><a href="#提交-0" class="headerlink" title="提交#0 &lt;-TLE"></a>提交#0 &lt;-TLE</h3><p>看来光dfs不行，要加入记忆化搜索。</p>
+<h3 id="提交-1-2"><a href="#提交-1-2" class="headerlink" title="提交#1 &lt;-60pt."></a>提交#1 &lt;-60pt.</h3><p>发生了错误：<br>你遇到的错误信息是在 <strong>洛谷平台上使用 <code>unordered_map&lt;pair&lt;int, int&gt;, int&gt;</code> 时，<code>pair&lt;int, int&gt;</code> 无法默认作为哈希键值类型</strong> 引起的。这是因为标准库中 <strong><code>std::hash&lt;std::pair&lt;int, int&gt;&gt;</code> 没有默认定义</strong>，所以 <code>unordered_map</code> 无法使用它来构造哈希函数，从而导致编译失败。</p>
+<p>然后采用了自定义哈希函数方案结果WA了</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">pair_hash</span> &#123;</span><br><span class="line">    <span class="function"><span class="type">size_t</span> <span class="title">operator</span><span class="params">()</span><span class="params">(<span class="type">const</span> pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt;&amp; p)</span> <span class="type">const</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">hash</span>&lt;<span class="type">int</span>&gt;()(p.first) ^ (<span class="built_in">hash</span>&lt;<span class="type">int</span>&gt;()(p.second) &lt;&lt; <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">unordered_map&lt;pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt;, <span class="type">int</span>, pair_hash&gt; dp;</span><br></pre></td></tr></table></figure>
+<p>难道只能改二维数组了吗？</p>
+<h3 id="提交-2"><a href="#提交-2" class="headerlink" title="提交#2 &lt;-60pt."></a>提交#2 &lt;-60pt.</h3><p>改了二维数组缓存还是WA了，看来问题就是数据溢出了。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">dp</span>(<span class="number">21</span>, <span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;(<span class="number">21</span>, <span class="number">-1</span>));</span><br></pre></td></tr></table></figure>
+<h3 id="提交-3"><a href="#提交-3" class="headerlink" title="提交#3 &lt;-AC"></a>提交#3 &lt;-AC</h3><h4 id="关键代码-8"><a href="#关键代码-8" class="headerlink" title="关键代码"></a>关键代码</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">dfs</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (x &gt; xb || y &gt; yb || x &lt; <span class="number">0</span> || y &lt; <span class="number">0</span> || grid[x][y] == <span class="number">1</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (dp[x][y] != <span class="number">-1</span>) <span class="keyword">return</span> dp[x][y];</span><br><span class="line">    <span class="keyword">if</span> (x == xb &amp;&amp; y == yb) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> ans = <span class="built_in">dfs</span>(x + <span class="number">1</span>, y) + <span class="built_in">dfs</span>(x, y + <span class="number">1</span>);</span><br><span class="line">    dp[x][y] = ans;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="关键思路"><a href="#关键思路" class="headerlink" title="关键思路"></a>关键思路</h4><p>没什么好说的 按照规则进行dfs搜素就行，挂个缓存表减少时间复杂度。</p>
+<h3 id="优化-0"><a href="#优化-0" class="headerlink" title="优化#0"></a>优化#0</h3><h5 id="思路-1"><a href="#思路-1" class="headerlink" title="思路"></a>思路</h5><p>优化为严格位置依赖的DP<br>分析一下<br>ans 是来自 dfs(x + 1, y) + dfs(x, y + 1) 的<br>也就是 ans -&gt; <code>dp[x + 1][y] + dp[x][y + 1]</code><br>其中 以 <code>dp[n][m]</code> 为 basecase，其中 <code>dp[n][m] == 1</code></p>
+<p>所以dp和含义很清楚了 <code>dp[i][j]</code> 表示 以 <code>grid[i][j]</code> 为起点，<br>到达 终点 <code>grid[n][m]</code> 有多少种方式。</p>
+<h5 id="关键代码-9"><a href="#关键代码-9" class="headerlink" title="关键代码"></a>关键代码</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">DP</span><span class="params">(<span class="type">int</span> n, <span class="type">int</span> m)</span> </span>&#123;</span><br><span class="line">    dp[n][m] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = n; i &gt;= <span class="number">0</span>; --i) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = m; j &gt;= <span class="number">0</span>; --j) &#123;</span><br><span class="line">            <span class="keyword">if</span> (!grid[i][j]) &#123;</span><br><span class="line">                <span class="type">int</span> res = <span class="number">0</span>;</span><br><span class="line">                <span class="keyword">if</span> (i &lt; n) res += dp[i + <span class="number">1</span>][j];</span><br><span class="line">                <span class="keyword">if</span> (j &lt; m) res += dp[i][j + <span class="number">1</span>];</span><br><span class="line">                dp[i][j] = res;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> dp[<span class="number">0</span>][<span class="number">0</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="优化-1"><a href="#优化-1" class="headerlink" title="优化#1"></a>优化#1</h4><h5 id="思路-2"><a href="#思路-2" class="headerlink" title="思路"></a>思路</h5><p>将 <code>block</code> 的逻辑<strong>直接合并进 <code>dp</code> 数组中是完全可行的</strong>，这种做法在简化代码结构、减少额外空间占用上也有优势。但需要注意 <strong>区分“不可走”和“还未计算”的状态</strong>。</p>
+<p>将 <code>dp[i][j] == -1</code> 视为“禁止通行”，这样初始化时就能一并处理禁止区域和普通区域，递推时只跳过 <code>-1</code> 的格子。</p>
+<h5 id="关键代码-10"><a href="#关键代码-10" class="headerlink" title="关键代码"></a>关键代码</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">DP</span><span class="params">(<span class="type">int</span> n, <span class="type">int</span> m)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (dp[n][m] == <span class="number">-1</span>) <span class="keyword">return</span> <span class="number">0</span>; <span class="comment">// 终点不能通行</span></span><br><span class="line"></span><br><span class="line">    dp[n][m] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = n; i &gt;= <span class="number">0</span>; --i) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = m; j &gt;= <span class="number">0</span>; --j) &#123;</span><br><span class="line">            <span class="keyword">if</span> (dp[i][j] == <span class="number">-1</span>) <span class="keyword">continue</span>; <span class="comment">// 被封锁</span></span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (i + <span class="number">1</span> &lt;= n &amp;&amp; dp[i + <span class="number">1</span>][j] != <span class="number">-1</span>) dp[i][j] += dp[i + <span class="number">1</span>][j];</span><br><span class="line">            <span class="keyword">if</span> (j + <span class="number">1</span> &lt;= m &amp;&amp; dp[i][j + <span class="number">1</span>] != <span class="number">-1</span>) dp[i][j] += dp[i][j + <span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> dp[<span class="number">0</span>][<span class="number">0</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="Daily-算法-P1255-数楼梯"><a href="#Daily-算法-P1255-数楼梯" class="headerlink" title="Daily::算法 @P1255 数楼梯"></a>Daily::算法 @<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1255">P1255 数楼梯</a></h2><h3 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h3><p>楼梯有 N 阶，上楼可以一步上一阶，也可以一步上二阶。</p>
+<p>编一个程序，计算共有多少种不同的走法。</p>
+<h3 id="思路-3"><a href="#思路-3" class="headerlink" title="思路"></a>思路</h3><p>经典DP</p>
+<h3 id="提交-0-1"><a href="#提交-0-1" class="headerlink" title="提交#0 &lt;-50pt."></a>提交#0 &lt;-50pt.</h3><p>判断可能是溢出问题，改用int64看看</p>
+<h3 id="提交-1-3"><a href="#提交-1-3" class="headerlink" title="提交#1 &lt;-60pt."></a>提交#1 &lt;-60pt.</h3><p>开到uint64也过不了？艹了。<br>看了一眼 N &#x3D;&#x3D; 50 的情况<br><code>cur = 20365011074</code><br>看来要用高精度加法了。</p>
+<h3 id="提交-2-1"><a href="#提交-2-1" class="headerlink" title="提交#2 &lt;-AC"></a>提交#2 &lt;-AC</h3><h4 id="关键代码-11"><a href="#关键代码-11" class="headerlink" title="关键代码"></a>关键代码</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">string <span class="title">string_plus</span><span class="params">(string &amp;a, string &amp;b)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> i = a.<span class="built_in">length</span>() - <span class="number">1</span>, j = b.<span class="built_in">length</span>() - <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> carry = <span class="number">0</span>;</span><br><span class="line">    string ret = <span class="built_in">string</span>(<span class="built_in">max</span>(a.<span class="built_in">length</span>(), b.<span class="built_in">length</span>()) + <span class="number">1</span>, <span class="string">&#x27;0&#x27;</span>);</span><br><span class="line">    <span class="type">int</span> k = ret.<span class="built_in">length</span>() - <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (i &gt;= <span class="number">0</span> || j &gt;= <span class="number">0</span> || carry) &#123;</span><br><span class="line">        <span class="type">int</span> digitA = i &gt;= <span class="number">0</span> ? a[i--] - <span class="string">&#x27;0&#x27;</span> : <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> digitB = j &gt;= <span class="number">0</span> ? b[j--] - <span class="string">&#x27;0&#x27;</span> : <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> res = digitA + digitB + carry;</span><br><span class="line">        ret[k--] = res % <span class="number">10</span> + <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">        carry = res / <span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (ret[<span class="number">0</span>] == <span class="string">&#x27;0&#x27;</span>) <span class="keyword">return</span> ret.<span class="built_in">substr</span>(<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    cin &gt;&gt; N;</span><br><span class="line">    <span class="keyword">if</span> (N &lt;= <span class="number">2</span>) &#123;</span><br><span class="line">        cout &lt;&lt; N &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    string pre = <span class="string">&quot;2&quot;</span>, preX2 = <span class="string">&quot;1&quot;</span>, cur;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">3</span>; i &lt;= N; ++i) &#123;</span><br><span class="line">        cur = <span class="built_in">string_plus</span>(pre, preX2);</span><br><span class="line">        preX2 = pre;</span><br><span class="line">        pre = cur;</span><br><span class="line">        <span class="meta">#<span class="keyword">ifdef</span> LOCAL</span></span><br><span class="line">        <span class="built_in">dbg</span>(cur);</span><br><span class="line">        <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; cur &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="关键点-6"><a href="#关键点-6" class="headerlink" title="关键点"></a>关键点</h4><h5 id="段错误问题"><a href="#段错误问题" class="headerlink" title="段错误问题"></a>段错误问题</h5><p>你这段程序是为了<strong>求大数斐波那契数列的第 N 项</strong>，使用字符串加法 <code>string_plus</code> 来处理超出 <code>unsigned long long</code> 的情况，这种做法是完全合理的。</p>
+<p>但你遇到的段错误 <code>Segmentation fault</code> 很可能是由以下一行代码引起的：</p>
+<p><code>#define int unsigned long long</code></p>
+<p>这句宏定义会把你所有的 <code>int</code> 替换为 <code>unsigned long long</code>，<strong>包括用于索引字符串的变量，如 <code>i</code>, <code>j</code>, <code>k</code>。</strong></p>
+<hr>
+<h2 id="Daily-算法-P1065-NOIP-2006-提高组-作业调度方案"><a href="#Daily-算法-P1065-NOIP-2006-提高组-作业调度方案" class="headerlink" title="Daily::算法 @P1065 [NOIP 2006 提高组] 作业调度方案"></a>Daily::算法 @<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1065">P1065 [NOIP 2006 提高组] 作业调度方案</a></h2><h3 id="题目描述-2"><a href="#题目描述-2" class="headerlink" title="题目描述"></a>题目描述</h3><p>我们现在要利用 m 台机器加工 n 个工件，每个工件都有 m 道工序，每道工序都在不同的指定的机器上完成。每个工件的每道工序都有指定的加工时间。</p>
+<p>每个工件的每个工序称为一个操作，我们用记号 <code>j-k</code> 表示一个操作，其中 j 为 1 到 n 中的某个数字，为工件号；k 为 1 到 m 中的某个数字，为工序号，例如 <code>2-4</code> 表示第 2 个工件第 4 道工序的这个操作。在本题中，我们还给定对于各操作的一个安排顺序。</p>
+<p>例如，当 n&#x3D;3,m&#x3D;2 时，<code>1-1,1-2,2-1,3-1,3-2,2-2</code> 就是一个给定的安排顺序，即先安排第 1 个工件的第 1 个工序，再安排第 1 个工件的第 2 个工序，然后再安排第 2 个工件的第 1 个工序，等等。</p>
+<p>一方面，每个操作的安排都要满足以下的两个约束条件。</p>
+<ol>
+<li><p>对同一个工件，每道工序必须在它前面的工序完成后才能开始；</p>
+</li>
+<li><p>同一时刻每一台机器至多只能加工一个工件。</p>
+</li>
+</ol>
+<p>另一方面，在安排后面的操作时，不能改动前面已安排的操作的工作状态。</p>
+<p>由于同一工件都是按工序的顺序安排的，因此，只按原顺序给出工件号，仍可得到同样的安排顺序，于是，在输入数据中，我们将这个安排顺序简写为 <code>1 1 2 3 3 2</code>。</p>
+<p>还要注意，“安排顺序”只要求按照给定的顺序安排每个操作。不一定是各机器上的实际操作顺序。在具体实施时，有可能排在后面的某个操作比前面的某个操作先完成。</p>
+<p>例如，取 n&#x3D;3,m&#x3D;2，已知数据如下（机器号&#x2F;加工时间）：</p>
+<table>
+<thead>
+<tr>
+<th>工件号</th>
+<th>工序 1</th>
+<th>工序 2</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>1&#x2F;3</td>
+<td>2&#x2F;2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1&#x2F;2</td>
+<td>2&#x2F;5</td>
+</tr>
+<tr>
+<td>3</td>
+<td>2&#x2F;2</td>
+<td>1&#x2F;4</td>
+</tr>
+</tbody></table>
+<p>则对于安排顺序 <code>1 1 2 3 3 2</code>，下图中的两个实施方案都是正确的。但所需要的总时间分别是 10 与 12。</p>
+<p>方案 1，用时 10：</p>
+<table>
+<thead>
+<tr>
+<th align="center">时间</th>
+<th align="center">1</th>
+<th align="center">2</th>
+<th align="center">3</th>
+<th align="center">4</th>
+<th align="center">5</th>
+<th align="center">6</th>
+<th align="center">7</th>
+<th align="center">8</th>
+<th align="center">9</th>
+<th align="center">10</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">机器 1 执行工序</td>
+<td align="center"><code>1-1</code></td>
+<td align="center"><code>1-1</code></td>
+<td align="center"><code>1-1</code></td>
+<td align="center"><code>2-1</code></td>
+<td align="center"><code>2-1</code></td>
+<td align="center"><code>3-2</code></td>
+<td align="center"><code>3-2</code></td>
+<td align="center"><code>3-2</code></td>
+<td align="center"><code>3-2</code></td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td align="center">机器 2 执行工序</td>
+<td align="center"><code>3-1</code></td>
+<td align="center"><code>3-1</code></td>
+<td align="center">无</td>
+<td align="center"><code>1-2</code></td>
+<td align="center"><code>1-2</code></td>
+<td align="center"><code>2-2</code></td>
+<td align="center"><code>2-2</code></td>
+<td align="center"><code>2-2</code></td>
+<td align="center"><code>2-2</code></td>
+<td align="center"><code>2-2</code></td>
+</tr>
+</tbody></table>
+<p>方案 2，用时 12：</p>
+<table>
+<thead>
+<tr>
+<th align="center">时间</th>
+<th align="center">1</th>
+<th align="center">2</th>
+<th align="center">3</th>
+<th align="center">4</th>
+<th align="center">5</th>
+<th align="center">6</th>
+<th align="center">7</th>
+<th align="center">8</th>
+<th align="center">9</th>
+<th align="center">10</th>
+<th align="center">11</th>
+<th align="center">12</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">机器 1 执行工序</td>
+<td align="center"><code>1-1</code></td>
+<td align="center"><code>1-1</code></td>
+<td align="center"><code>1-1</code></td>
+<td align="center"><code>2-1</code></td>
+<td align="center"><code>2-1</code></td>
+<td align="center">无</td>
+<td align="center">无</td>
+<td align="center"><code>3-2</code></td>
+<td align="center"><code>3-2</code></td>
+<td align="center"><code>3-2</code></td>
+<td align="center"><code>3-2</code></td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td align="center">机器 2 执行工序</td>
+<td align="center">无</td>
+<td align="center">无</td>
+<td align="center">无</td>
+<td align="center"><code>1-2</code></td>
+<td align="center"><code>1-2</code></td>
+<td align="center"><code>3-1</code></td>
+<td align="center"><code>3-1</code></td>
+<td align="center"><code>2-2</code></td>
+<td align="center"><code>2-2</code></td>
+<td align="center"><code>2-2</code></td>
+<td align="center"><code>2-2</code></td>
+<td align="center"><code>2-2</code></td>
+</tr>
+</tbody></table>
+<p>当一个操作插入到某台机器的某个空档时（机器上最后的尚未安排操作的部分也可以看作一个空档），可以靠前插入，也可以靠后或居中插入。为了使问题简单一些，我们约定：在保证约束条件 (1.)(2.) 的条件下，尽量靠前插入。并且，我们还约定，如果有多个空档可以插入，就在保证约束条件 (1.)(2.) 的条件下，插入到最前面的一个空档。于是，在这些约定下，上例中的方案一是正确的，而方案二是不正确的。</p>
+<p>显然，在这些约定下，对于给定的安排顺序，符合该安排顺序的实施方案是唯一的，请你计算出该方案完成全部任务所需的总时间。</p>
+<h3 id="思路-4"><a href="#思路-4" class="headerlink" title="思路"></a>思路</h3><blockquote>
+<p>一方面，每个操作的安排都要满足以下的两个约束条件。</p>
+<ol>
+<li>对同一个工件，每道工序必须在它前面的工序完成后才能开始；</li>
+<li>同一时刻每一台机器至多只能加工一个工件。<br>另一方面，在安排后面的操作时，不能改动前面已安排的操作的工作状态。</li>
+</ol>
+</blockquote>
+<h3 id="抄"><a href="#抄" class="headerlink" title="抄"></a>抄</h3><p>我将为您解释这段C语言代码，分析它的功能和工作原理。</p>
+<p>这是一个柔性作业车间调度问题(Flexible Job Shop Scheduling Problem, FJSP)的求解代码。柔性作业车间调度是一种生产调度问题，需要安排多个工件在多台机器上的加工顺序，使得总完成时间最短。</p>
+<h4 id="代码结构解析"><a href="#代码结构解析" class="headerlink" title="代码结构解析"></a>代码结构解析</h4><h5 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h5><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> m, n;  <span class="comment">// m为每个工件的工序数量，n为工件数量</span></span><br><span class="line"><span class="type">int</span> <span class="built_in">list</span>[<span class="number">501</span>];  <span class="comment">// 工件的加工顺序</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Information</span> &#123;</span></span><br><span class="line">    <span class="type">int</span> id;    <span class="comment">// 在第id台机器上加工</span></span><br><span class="line">    <span class="type">int</span> cost;  <span class="comment">// 花费cost时间</span></span><br><span class="line">&#125; a[<span class="number">21</span>][<span class="number">21</span>];   <span class="comment">// a[工件编号][工序编号]</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> mac[<span class="number">21</span>][<span class="number">100001</span>] = &#123;<span class="number">0</span>&#125;;  <span class="comment">// mac[机器编号][时间] 记录每台机器在每个时间点是否被占用</span></span><br><span class="line"><span class="type">int</span> step[<span class="number">21</span>] = &#123;<span class="number">0</span>&#125;;         <span class="comment">// 每个工件当前加工到的工序</span></span><br><span class="line"><span class="type">int</span> las_time[<span class="number">21</span>] = &#123;<span class="number">0</span>&#125;;     <span class="comment">// 每个工件上一道工序完成的时间</span></span><br><span class="line"><span class="type">int</span> ans = <span class="number">0</span>;                <span class="comment">// 所有工件完成加工的最大时间</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="主要逻辑"><a href="#主要逻辑" class="headerlink" title="主要逻辑"></a>主要逻辑</h5><ol>
+<li><p><strong>输入处理</strong>：</p>
+<ul>
+<li>读取工件数量n和每个工件的工序数量m</li>
+<li>读取工件的加工顺序list</li>
+<li>读取每个工件每道工序需要的机器id</li>
+<li>读取每个工件每道工序的加工时间cost</li>
+</ul>
+</li>
+<li><p><strong>按顺序调度工件</strong>：</p>
+</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= m * n; i++) &#123;</span><br><span class="line">	<span class="type">int</span> now = <span class="built_in">list</span>[i];  <span class="comment">// 当前要处理的工件</span></span><br><span class="line">	step[now]++;        <span class="comment">// 工件now的工序加1</span></span><br><span class="line">	</span><br><span class="line">	<span class="type">int</span> id = a[now][step[now]].id;    <span class="comment">// 当前工序需要的机器id</span></span><br><span class="line">	<span class="type">int</span> cost = a[now][step[now]].cost; <span class="comment">// 当前工序的加工时间</span></span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 找到机器id上连续cost个空闲时间段</span></span><br><span class="line">	<span class="type">int</span> s = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> j = las_time[now] + <span class="number">1</span>; ; j++) &#123;</span><br><span class="line">		<span class="keyword">if</span> (mac[id][j] == <span class="number">0</span>) &#123;  <span class="comment">// 如果时间j机器空闲</span></span><br><span class="line">			s++;</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			s = <span class="number">0</span>;  <span class="comment">// 如果时间j机器被占用，重新开始计数</span></span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">if</span> (s == cost) &#123;  <span class="comment">// 找到连续cost个空闲时间</span></span><br><span class="line">			<span class="comment">// 将这段时间标记为被占用</span></span><br><span class="line">			<span class="keyword">for</span> (<span class="type">int</span> k = j - cost + <span class="number">1</span>; k &lt;= j; k++) &#123;</span><br><span class="line">				mac[id][k] = <span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">			<span class="keyword">if</span> (j &gt; ans) ans = j;  <span class="comment">// 更新最大完成时间</span></span><br><span class="line">			las_time[now] = j;     <span class="comment">// 更新工件now的完成时间</span></span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li><p><strong>输出结果</strong>：</p>
+<ul>
+<li>输出所有工件完成加工的最大时间ans</li>
+</ul>
+</li>
+</ol>
+<h4 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a>算法分析</h4><p>这个算法使用了贪心策略，按照给定的工件处理顺序list，依次为每个工件的当前工序分配机器时间。对于每个工序，算法会在对应机器上寻找足够长的连续空闲时间段来完成加工。</p>
+<p>关键点：</p>
+<ol>
+<li>每个工件必须按照其工序顺序进行加工</li>
+<li>一个工件的下一道工序必须在前一道工序完成后才能开始</li>
+<li>同一时间，一台机器只能加工一个工件的一道工序</li>
+<li>目标是最小化所有工件完成加工的时间</li>
+</ol>
+<p>时间复杂度：O(m×n×T)，其中T是最大完成时间。在最坏情况下，算法可能需要遍历机器的每个时间点来寻找空闲时间段。</p>
+<p>空间复杂度：O(M×T)，其中M是机器数量，T是最大完成时间。主要用于存储mac数组，记录每台机器在每个时间点的占用情况。</p>
+<h4 id="优化建议"><a href="#优化建议" class="headerlink" title="优化建议"></a>优化建议</h4><ol>
+<li>mac数组的大小设置为100001可能过大，应该根据实际情况调整</li>
+<li>查找连续空闲时间段的算法可以优化，例如使用区间树或线段树</li>
+<li>可以考虑使用更高效的调度算法，如遗传算法、蚁群算法等启发式算法</li>
+</ol>
+<p>总结：这段代码实现了一个基于贪心策略的柔性作业车间调度算法，通过按照给定顺序依次为工件的工序分配机器时间，以找到所有工件完成加工的最短时间。</p>
+<hr>
+<h2 id="Daily-算法-P1786-帮贡排序"><a href="#Daily-算法-P1786-帮贡排序" class="headerlink" title="Daily::算法 @P1786 帮贡排序"></a>Daily::算法 @<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1786">P1786 帮贡排序</a></h2><h3 id="题目描述-3"><a href="#题目描述-3" class="headerlink" title="题目描述"></a>题目描述</h3><p>在 absi2011 的帮派里，死号偏多。现在 absi2011 和帮主等人联合决定，要清除一些死号，加进一些新号，同时还要鼓励帮贡多的人，对帮派进行一番休整。</p>
+<p>目前帮派内共最多有一位帮主，两位副帮主，两位护法，四位长老，七位堂主，二十五名精英，帮众若干。</p>
+<p>现在 absi2011 要对帮派内几乎所有人的职位全部调整一番。他发现这是个很难的事情。于是要求你帮他调整。</p>
+<p>他给你每个人的以下数据：</p>
+<p>他的名字（长度不会超过 30），他的原来职位，他的帮贡，他的等级。</p>
+<p>他要给帮贡最多的护法的职位，其次长老，以此类推。</p>
+<p>可是，乐斗的显示并不按帮贡排序而按职位和等级排序。</p>
+<p>他要你求出最后乐斗显示的列表(在他调整过职位后)：职位第一关键字，等级第二关键字。</p>
+<p>注意：absi2011 无权调整帮主、副帮主的职位，包括他自己的（这不是废话么..）</p>
+<p>他按原来的顺序给你（所以，等级相同的，原来靠前的现在也要靠前，因为经验高低的原因，但此处为了简单点省去经验。）</p>
+<p>输入格式<br>    第一行一个正整数 n，表示星月家园内帮友的人数。<br>    下面 n 行每行两个字符串两个整数，表示每个人的名字、职位、帮贡、等级。</p>
+<p>输出格式<br>    一共输出 n 行，每行包括排序后乐斗显示的名字、职位、等级。</p>
+<h3 id="思路-5"><a href="#思路-5" class="headerlink" title="思路"></a>思路</h3><p>模拟题，先捋顺思路，怎么样去模拟。<br>首先，要明细：</p>
+<blockquote>
+<ol>
+<li>帮派内共最多有一位帮主，两位副帮主，两位护法，四位长老，七位堂主，二十五名精英，帮众若干。</li>
+<li>数据输入保证有一名帮主，保证有两名副帮主，保证有一名副帮主叫 absi2011，不保证一开始帮派里所有职位都是满人的，但排序后分配职务请先分配高级职位。例如原来设一名护法现在设两名。</li>
+<li>可是，乐斗的显示并不按帮贡排序而按职位和等级排序。</li>
+<li>他按原来的顺序给你（所以，等级相同的，原来靠前的现在也要靠前，因为经验高低的原因，但此处为了简单点省去经验。）</li>
+</ol>
+</blockquote>
+<p>那就维护一个映射，维护每个职位的数量。<br>然后排序之后在参考映射在保证合法的情况下分配职位。<br>那很明显，题目关键就是 结构体， 排序（自定义排序规则）了</p>
+<h3 id="提交-0-2"><a href="#提交-0-2" class="headerlink" title="提交#0 &lt;-WA"></a>提交#0 &lt;-WA</h3><p>示例过了，但是其他全WA了，有意思。<br>哦 其实没过，我tm的没有按照原始顺序。</p>
+<h3 id="提交-1-4"><a href="#提交-1-4" class="headerlink" title="提交#1 &lt;-AC"></a>提交#1 &lt;-AC</h3><p>改动点很简单，在结构体加入输入顺序属性，并在比较规则加入比较输入顺序。</p>
+<h4 id="关键代码-12"><a href="#关键代码-12" class="headerlink" title="关键代码"></a>关键代码</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">    <span class="built_in">stable_sort</span>(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>(), [](<span class="keyword">auto</span> <span class="type">const</span> &amp;a, <span class="keyword">auto</span> <span class="type">const</span> &amp;b)&#123;</span><br><span class="line">        <span class="keyword">if</span> (a.job != b.job) &#123;</span><br><span class="line">            <span class="keyword">return</span> mapper[a.job] &lt; mapper[b.job];</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (a.level != b.level) &#123;</span><br><span class="line">            <span class="keyword">return</span> a.level &gt; b.level;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> a.input_order &lt; b.input_order;  <span class="comment">// 当职位和等级相同时，按输入顺序排序</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure>
+
+<h4 id="关键点-7"><a href="#关键点-7" class="headerlink" title="关键点"></a>关键点</h4><p>主要就是要理清题目给的规则。</p>
+<hr>
+<h2 id="Daily-算法-P1068-NOIP-2009-普及组-分数线划定"><a href="#Daily-算法-P1068-NOIP-2009-普及组-分数线划定" class="headerlink" title="Daily::算法 @P1068 [NOIP 2009 普及组] 分数线划定"></a>Daily::算法 @<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1068">P1068 [NOIP 2009 普及组] 分数线划定</a></h2><h3 id="题目描述-4"><a href="#题目描述-4" class="headerlink" title="题目描述"></a>题目描述</h3><p>世博会志愿者的选拔工作正在 A 市如火如荼的进行。为了选拔最合适的人才，A 市对所有报名的选手进行了笔试，笔试分数达到面试分数线的选手方可进入面试。面试分数线根据计划录取人数的 150% 划定，即如果计划录取 m 名志愿者，则面试分数线为排名第 m×150%（向下取整）名的选手的分数，而最终进入面试的选手为笔试成绩不低于面试分数线的所有选手。</p>
+<p>现在就请你编写程序划定面试分数线，并输出所有进入面试的选手的报名号和笔试成绩。</p>
+<p>输入格式：<br>    第一行，两个整数 n,m(5≤n≤5000,3≤m≤n)，中间用一个空格隔开，其中 n 表示报名参加笔试的选手总数，m 表示计划录取的志愿者人数。输入数据保证 m×150% 向下取整后小于等于 n。<br>    第二行到第 n+1 行，每行包括两个整数，中间用一个空格隔开，分别是选手的报名号 k(1000≤k≤9999)和该选手的笔试成绩 s(1≤s≤100)。数据保证选手的报名号各不相同。</p>
+<p>输出格式：<br>    第一行，有 2 个整数，用一个空格隔开，第一个整数表示面试分数线；第二个整数为进入面试的选手的实际人数。<br>    从第二行开始，每行包含 2 个整数，中间用一个空格隔开，分别表示进入面试的选手的报名号和笔试成绩，按照笔试成绩从高到低输出，如果成绩相同，则按报名号由小到大的顺序输出。</p>
+<blockquote>
+<p>m×150%&#x3D;3×150%&#x3D;4.5，向下取整后为 4。保证 4 个人进入面试的分数线为 88，但因为 88 有重分，所以所有成绩大于等于 88 的选手都可以进入面试，故最终有 5 个人进入面试。</p>
+</blockquote>
+<h3 id="思路-6"><a href="#思路-6" class="headerlink" title="思路"></a>思路</h3><p>排序＋二分查找？</p>
+<h3 id="提交-0-3"><a href="#提交-0-3" class="headerlink" title="提交#0 &lt;-80pt."></a>提交#0 &lt;-80pt.</h3><p>过了80%的点，那估计可能是边界问题没考虑。</p>
+<h3 id="提交-1-5"><a href="#提交-1-5" class="headerlink" title="提交#1 &lt;-AC"></a>提交#1 &lt;-AC</h3><p>索引计算错了，应该是：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> score_line = v[m * <span class="number">3</span> / <span class="number">2</span>].second; <span class="comment">// 错误的写法</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> score_line = v[m * <span class="number">3</span> / <span class="number">2</span> - <span class="number">1</span>].second; <span class="comment">// 正确的写法</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>题目给出的m是 base1 的，但是索引是 base0 的，要注意。</p>
+</blockquote>
+<h4 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h4><ol>
+<li><p>自定义比较器，先为数组按规则排好序</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sort</span>(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>(), [](<span class="keyword">auto</span> &amp;a, <span class="keyword">auto</span> &amp;b) &#123;</span><br><span class="line">	<span class="keyword">if</span> (a.second != b.second) <span class="keyword">return</span> a.second &gt; b.second;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">return</span> a.first &lt; b.first;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>利用二分查找（这里直接使用 <code>std::upper_bound()</code>）</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">auto</span> it = <span class="built_in">upper_bound</span>(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>(), score_line, [](<span class="type">int</span> v, <span class="keyword">auto</span> &amp;a) &#123;</span><br><span class="line">	<span class="keyword">return</span> v &gt; a.second;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="关键点-8"><a href="#关键点-8" class="headerlink" title="关键点"></a>关键点</h4><p>这是因为数组索引从0开始，而题目中说的是第<code>m * 150%</code>名的选手，所以需要减1来获取正确的索引位置。</p>
+<p><code>upper_bound</code>使用是没有问题的。由于已经将选手按照分数从高到低排序（分数相同时按报名号从小到大），所以<code>upper_bound</code>可以找到第一个分数严格小于分数线的选手的位置，从而确定有多少选手的分数大于等于分数线。</p>
+<hr>
+<h2 id="Daily-算法-P2089-烤鸡"><a href="#Daily-算法-P2089-烤鸡" class="headerlink" title="Daily::算法 @P2089 烤鸡"></a>Daily::算法 @<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P2089">P2089 烤鸡</a></h2><h3 id="题目描述-5"><a href="#题目描述-5" class="headerlink" title="题目描述"></a>题目描述</h3><p>猪猪 Hanke 得到了一只鸡。<br>猪猪 Hanke 特别喜欢吃烤鸡（本是同畜牲，相煎何太急！）Hanke 吃鸡很特别，为什么特别呢？因为他有 10 种配料（芥末、孜然等），每种配料可以放 1 到 3 克，任意烤鸡的美味程度为所有配料质量之和。</p>
+<p>现在， Hanke 想要知道，如果给你一个美味程度 n ，请输出这 10 种配料的所有搭配方案。</p>
+<p>输入格式：<br>    一个正整数 n，表示美味程度。</p>
+<p>输出格式：<br>    第一行，方案总数。<br>    第二行至结束，10 个数，表示每种配料所放的质量，按字典序排列。<br>    如果没有符合要求的方法，就只要在第一行输出一个 0。</p>
+<blockquote>
+<p>对于 100% 的数据，$n≤5000$</p>
+</blockquote>
+<h3 id="思路-7"><a href="#思路-7" class="headerlink" title="思路"></a>思路</h3><p>枚举所有可能</p>
+<h3 id="提交-1-6"><a href="#提交-1-6" class="headerlink" title="提交#1 &lt;-AC"></a>提交#1 &lt;-AC</h3><h4 id="关键代码-13"><a href="#关键代码-13" class="headerlink" title="关键代码"></a>关键代码</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 当前配料编号、第 i 个配料，和当前总克数 deli</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">dfs</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; path, <span class="type">int</span> idx, <span class="type">int</span> deli)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (idx == <span class="number">10</span>) &#123; <span class="comment">// 已经放了10种配料</span></span><br><span class="line">        <span class="keyword">if</span> (deli == n) ans.<span class="built_in">push_back</span>(path); <span class="comment">// 总克数恰好为 n，合法方案</span></span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt;= <span class="number">3</span>; ++j) &#123; <span class="comment">// 每种配料可以放1到3克</span></span><br><span class="line">        path.<span class="built_in">push_back</span>(j);</span><br><span class="line">        <span class="built_in">dfs</span>(path, idx + <span class="number">1</span>, deli + j); <span class="comment">// 放下一种配料</span></span><br><span class="line">        path.<span class="built_in">pop_back</span>();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="关键点-9"><a href="#关键点-9" class="headerlink" title="关键点"></a>关键点</h4><p><strong>关键问题</strong>：<br>你在 <code>dfs</code> 里用了两层循环：<br><code>for (int i = 0; i &lt; 10; ++i) &#123;      for (int j = 1; j &lt;= 3; ++j) &#123;         ...     &#125; &#125;</code><br><strong>但实际上</strong>，应该是严格按照“<strong>每种配料（共10种），每种放1到3克</strong>”，<strong>每种只放一次</strong>，而不是每次随便放 1 到 3 克还循环10次！</p>
+<ul>
+<li>也就是说，<strong>搜索10次（恰好10个配料）</strong>，每次选择当前配料放 1、2、3 克。</li>
+<li>当前递归深度（配料编号）应从0到9，而不是乱循环。</li>
+</ul>
+<h3 id="优化-1"><a href="#优化-1" class="headerlink" title="优化"></a>优化</h3><p>可以优化的点：</p>
+<ol>
+<li><strong>剪枝优化</strong>：如果<code>当前剩余最小值 &gt; 还能放的量</code>，可以提前返回（但这题数据范围小，不需要剪枝也能过）。</li>
+<li><strong>时间复杂度</strong>：最多 3103^{10}310 次搜索，约59000次以内，<strong>可以承受</strong>。</li>
+</ol>
+<hr>
+<h2 id="Daily-算法-1-P1152-欢乐的跳"><a href="#Daily-算法-1-P1152-欢乐的跳" class="headerlink" title="Daily::算法#1 @P1152 欢乐的跳"></a>Daily::算法#1 @<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1152">P1152 欢乐的跳</a></h2><h3 id="题目描述-6"><a href="#题目描述-6" class="headerlink" title="题目描述"></a>题目描述</h3><p>一个 n 个元素的整数数组，如果数组两个连续元素之间差的绝对值包括了 $[1,n−1]$ 之间的所有整数，则称之符合“欢乐的跳”，如数组 ${1,4,2,3}$ 符合“欢乐的跳”，因为差的绝对值分别为：$3,2,1$。</p>
+<p>给定一个数组，你的任务是判断该数组是否符合“欢乐的跳”。</p>
+<p>每组测试数据第一行以一个整数 $n(1≤n≤1000)$ 开始，接下来 $n$ 个空格隔开的在 $[−10^8,10^8]$ 之间的整数。</p>
+<p>对于每组测试数据，输出一行若该数组符合“欢乐的跳”则输出 <code>Jolly</code>，否则输出 <code>Not jolly</code>。</p>
+<h3 id="思路-8"><a href="#思路-8" class="headerlink" title="思路"></a>思路</h3><p>因为 $n$ 不大，先按题目思路走，构造对应的差值集合（静态数组模拟），<br>然后排序后判断是否合法。</p>
+<h3 id="提交-1-7"><a href="#提交-1-7" class="headerlink" title="提交#1 &lt;-RE"></a>提交#1 &lt;-RE</h3><p>主要问题在于：当相邻元素差值过大时，可能会超出数组 s 的边界（只定义了1001大小）。例如，如果输入序列中有两个相邻数字相差超过1000，就会发生越界访问。<br>更改：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="built_in">abs</span>(v1[i] - v1[i - <span class="number">1</span>]) &lt;= <span class="number">1000</span>)</span><br><span class="line">	s[<span class="built_in">abs</span>(v1[i] - v1[i - <span class="number">1</span>])] = <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="提交-2-2"><a href="#提交-2-2" class="headerlink" title="提交#2 &lt;-AC"></a>提交#2 &lt;-AC</h3><h4 id="关键代码-14"><a href="#关键代码-14" class="headerlink" title="关键代码"></a>关键代码</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">```cpp</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line"><span class="type">int</span> s[<span class="number">1001</span>] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">v1</span><span class="params">(n)</span></span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> &amp;n : v1) cin &gt;&gt; n;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; ++i) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">abs</span>(v1[i] - v1[i - <span class="number">1</span>]) &lt;= <span class="number">1000</span>) </span><br><span class="line">            s[<span class="built_in">abs</span>(v1[i] - v1[i - <span class="number">1</span>])] = <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">bool</span> flag = <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n - <span class="number">1</span>; ++i) &#123;</span><br><span class="line">        <span class="keyword">if</span> (s[i] != <span class="number">1</span>) &#123;</span><br><span class="line">            flag = <span class="literal">false</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; (flag  ? <span class="string">&quot;Jolly&quot;</span> : <span class="string">&quot;Not jolly&quot;</span>) &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="优化-2"><a href="#优化-2" class="headerlink" title="优化"></a>优化</h3><p>实际上，如果任何相邻元素的差的绝对值大于 $n-1$ ，那么这个序列肯定不是欢乐跳序列，因为差值必须在 $(1, n-1)$ 之间。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">bool</span> flag = <span class="literal">true</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; ++i) &#123;</span><br><span class="line">	<span class="type">int</span> diff = <span class="built_in">abs</span>(v1[i] - v1[i - <span class="number">1</span>]);</span><br><span class="line">	<span class="comment">// 如果差值超出范围1~(n-1)，直接判定为非欢乐跳</span></span><br><span class="line">	<span class="keyword">if</span> (diff &lt; <span class="number">1</span> || diff &gt; n - <span class="number">1</span>) &#123;</span><br><span class="line">		flag = <span class="literal">false</span>;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	s[diff] = <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 只有当所有差值都在范围内，才需要检查是否包含所有1到n-1的数</span></span><br><span class="line"><span class="keyword">if</span> (flag) &#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n - <span class="number">1</span>; ++i) &#123;</span><br><span class="line">		<span class="keyword">if</span> (s[i] != <span class="number">1</span>) &#123;</span><br><span class="line">			flag = <span class="literal">false</span>;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Daily-算法-2-P1104-生日"><a href="#Daily-算法-2-P1104-生日" class="headerlink" title="Daily::算法#2 @P1104 生日"></a>Daily::算法#2 @<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1104">P1104 生日</a></h2><h3 id="题目描述-7"><a href="#题目描述-7" class="headerlink" title="题目描述"></a>题目描述</h3><p>cjf 君想调查学校 OI 组每个同学的生日，并按照年龄从大到小的顺序排序。但 cjf 君最近作业很多，没有时间，所以请你帮她排序。</p>
+<p>输入共有 $n+1$ 行，<br>第 1 行为 OI 组总人数 $n$；<br>第 2 行至第 $n+1$ 行分别是每人的 $姓名 s、出生年 y、月 m、日 d$ 。</p>
+<p>输出共有 $n$ 行，</p>
+<p>即 $n$ 个生日从大到小同学的姓名。（如果有两个同学生日相同，输入靠后的同学先输出）</p>
+<h3 id="提交-1-8"><a href="#提交-1-8" class="headerlink" title="提交#1 &lt;-AC"></a>提交#1 &lt;-AC</h3><h4 id="关键代码-15"><a href="#关键代码-15" class="headerlink" title="关键代码"></a>关键代码</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">bool</span> <span class="title">cmp</span> <span class="params">(stu <span class="type">const</span> &amp;a, stu <span class="type">const</span> &amp;b)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (a.y != b.y) <span class="keyword">return</span> a.y &lt; b.y;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">if</span> (a.m != b.m) <span class="keyword">return</span> a.m &lt; b.m;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">return</span> a.d &lt;= b.d;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="关键点-10"><a href="#关键点-10" class="headerlink" title="关键点"></a>关键点</h4><ol>
+<li>自定义比较器cmp，定义合法的比较规则</li>
+<li>cpp自带的<code>sort()</code>不能稳定排序（底层是快排实现的，<code>stable_sort()</code> 可以稳定排序</li>
+</ol>
+<h2 id="Daily-算法-3-P5143-攀爬者"><a href="#Daily-算法-3-P5143-攀爬者" class="headerlink" title="Daily::算法#3 @P5143 攀爬者"></a>Daily::算法#3 @<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P5143">P5143 攀爬者</a></h2><h3 id="题目描述-8"><a href="#题目描述-8" class="headerlink" title="题目描述"></a>题目描述</h3><p>HKE 考完 GDOI 之后跟他的神犇小伙伴们一起去爬山。</p>
+<p>他在地形图上标记了 N 个点，每个点 Pi​ 都有一个坐标 $(x_i​,y_i​,z_i​)$。所有点对中，高度值 $z$ 不会相等。HKE 准备从最低的点爬到最高的点，他的攀爬满足以下条件：</p>
+<p>(1) 经过他标记的每一个点；</p>
+<p>(2) 从第二个点开始，他经过的每一个点高度 $z$ 都比上一个点高；</p>
+<p>(3) HKE 会飞，他从一个点 Pi​ 爬到 Pj​ 的距离为两个点的欧几里得距离。即，$(X_i​−X_j​)^2+(Y_i​−Y_j​)^2+(Z_i​−Z_j​)^2​$</p>
+<p>现在，HKE 希望你能求出他攀爬的总距离。</p>
+<p>第一行，一个整数 N 表示地图上的点数。</p>
+<p>接下来 N 行，三个整数 $x_i​,y_i​,z_i$​ 表示第 i 个点的坐标。</p>
+<p>一个实数，表示 HKE 需要攀爬的总距离（保留三位小数）</p>
+<h3 id="提交-1-9"><a href="#提交-1-9" class="headerlink" title="提交#1 &lt;-AC"></a>提交#1 &lt;-AC</h3><h4 id="关键代码-16"><a href="#关键代码-16" class="headerlink" title="关键代码"></a>关键代码</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">double</span> <span class="title">getDistance</span><span class="params">(point &amp;a, point &amp;b)</span> </span>&#123;</span><br><span class="line">    <span class="type">double</span> dx = a.x - b.x;</span><br><span class="line">    <span class="type">double</span> dy = a.y - b.y;</span><br><span class="line">    <span class="type">double</span> dz = a.z - b.z;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">sqrt</span>(dx*dx + dy*dy + dz*dz);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="关键点-11"><a href="#关键点-11" class="headerlink" title="关键点"></a>关键点</h4><ol>
+<li>自定义比较规则，让点按从小到大排位</li>
+<li>计算两点之间的欧氏距离累加和<blockquote>
+<p>需要注意double的问题！</p>
+</blockquote>
+</li>
+</ol>
+<hr>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="blog.l4place.icu">l4place</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://www.l4place.icu/2025/05/04/%E5%AD%A6%E4%B9%A0%E5%91%A8%E6%8A%A5W07/">http://www.l4place.icu/2025/05/04/%E5%AD%A6%E4%B9%A0%E5%91%A8%E6%8A%A5W07/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">除特別声明外，本博客所有文章均遵守 WTFPL 许可。</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%85%A5%E9%97%A8/">入门</a><a class="post-meta__tags" href="/tags/%E6%80%BB%E7%BB%93/">总结</a><a class="post-meta__tags" href="/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/">碎碎念</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2025/04/27/%E5%AD%A6%E4%B9%A0%E5%91%A8%E6%8A%A5W06/" title="学习周报W06"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-04-27</div><div class="info-item-2">学习周报W06</div></div><div class="info-2"><div class="info-item-1">要写重要的，写思路，写关键代码，写踩了什么坑，写能怎么优化！</div></div></div></a><a class="pagination-related" href="/2025/05/13/%E5%AD%A6%E4%B9%A0%E5%91%A8%E6%8A%A5W08/" title="学习周报W08"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-05-13</div><div class="info-item-2">学习周报W08</div></div><div class="info-2"><div class="info-item-1">Intro总结每日算法这周一共写了八道 递归&#x2F;递推&#x2F;回溯...</div></div></div></a><a class="pagination-related" href="/2025/04/24/Codeforces%20Round%201017%20(Div.%204)/" title="Codeforces Round 1017 (Div. 4)"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-04-24</div><div class="info-item-2">Codeforces Round 1017 (Div. 4)</div></div><div class="info-2"><div class="info-item-1">Solutions in Codeforces Round 1017 (Div. 4)</div></div></div></a><a class="pagination-related" href="/2025/04/20/GitHub%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E4%B9%8B%E5%8F%91%E8%B5%B7%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAPR/" title="GitHub最佳实践之发起你的第一个PR"><img class="cover" src="/img/default_post_cover.webp" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-04-20</div><div class="info-item-2">GitHub最佳实践之发起你的第一个PR</div></div><div class="info-2"><div class="info-item-1">你可以把 Git 比作是一本笔记本，而 GitHub 就像是一个云笔记平台（比如Evernote），它让你可以随时随地访问、分享和协作管理你的笔记（代码）。</div></div></div></a><a class="pagination-related" href="/2025/01/01/HELLOL4PLACE/" title="”Hello world！“"><img class="cover" src="/img/default_post_cover.webp" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-01-01</div><div class="info-item-2">”Hello world！“</div></div><div class="info-2"><div class="info-item-1">基于hexo框架的个人博客，以及其上二次开发的butterfly主题</div></div></div></a><a class="pagination-related" href="/2025/05/15/%E5%A6%82%E4%BD%95%E7%BB%98%E5%88%B6%E6%9F%B1%E7%8A%B6%E5%9B%BE%E5%9B%BE%E8%A1%A8/" title="如何绘制柱状图图表"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-05-15</div><div class="info-item-2">如何绘制柱状图图表</div></div><div class="info-2"><div class="info-item-1">机器学习相关技巧</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="disqusjs-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">L4plAce</div><div class="author-info-description">以空想为罗盘，以实践作航船</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/L4plAcEee"><i class="fab fa-github"></i><span>View in Github</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">如果图片碎了那就证明你需要挂梯子了 :- (</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Intro"><span class="toc-number">1.</span> <span class="toc-text">Intro</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0%EF%BC%9A%E8%83%8C%E5%8C%85dp-01%E8%83%8C%E5%8C%85%E3%80%81%E6%9C%89%E4%BE%9D%E8%B5%96%E7%9A%84%E8%83%8C%E5%8C%85"><span class="toc-number">2.</span> <span class="toc-text">理论学习：背包dp-01背包、有依赖的背包</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E8%BF%B0"><span class="toc-number">2.1.</span> <span class="toc-text">简述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%83%E4%B9%A0"><span class="toc-number">2.2.</span> <span class="toc-text">练习</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE1-01%E8%83%8C%E5%8C%85-%E6%A8%A1%E7%89%88"><span class="toc-number">2.2.1.</span> <span class="toc-text">题目1 01背包(模版)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8F%90%E4%BA%A4-1"><span class="toc-number">2.2.1.1.</span> <span class="toc-text">提交#1 &lt;-AC</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E4%BB%A3%E7%A0%81"><span class="toc-number">2.2.1.1.1.</span> <span class="toc-text">关键代码</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E7%82%B9"><span class="toc-number">2.2.1.1.2.</span> <span class="toc-text">关键点</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%98%E5%8C%96"><span class="toc-number">2.2.1.2.</span> <span class="toc-text">优化</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE2-%E5%A4%8F%E5%AD%A3%E7%89%B9%E6%83%A0"><span class="toc-number">2.2.2.</span> <span class="toc-text">题目2 夏季特惠</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF%E5%A4%8D%E7%8E%B0"><span class="toc-number">2.2.2.1.</span> <span class="toc-text">思路复现</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8F%90%E4%BA%A4-1-1"><span class="toc-number">2.2.2.2.</span> <span class="toc-text">提交#1 &lt;-AC</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E4%BB%A3%E7%A0%81-1"><span class="toc-number">2.2.2.2.1.</span> <span class="toc-text">关键代码</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E7%82%B9-1"><span class="toc-number">2.2.2.2.2.</span> <span class="toc-text">关键点</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE3-%E7%9B%AE%E6%A0%87%E5%92%8C"><span class="toc-number">2.2.3.</span> <span class="toc-text">题目3 目标和</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-0"><span class="toc-number">2.2.3.1.</span> <span class="toc-text">思路#0</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E4%BB%A3%E7%A0%81-2"><span class="toc-number">2.2.3.1.1.</span> <span class="toc-text">关键代码</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E7%82%B9-2"><span class="toc-number">2.2.3.1.2.</span> <span class="toc-text">关键点</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-1"><span class="toc-number">2.2.3.2.</span> <span class="toc-text">思路#1</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E4%BB%A3%E7%A0%81-3"><span class="toc-number">2.2.3.2.1.</span> <span class="toc-text">关键代码</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E7%82%B9-3"><span class="toc-number">2.2.3.2.2.</span> <span class="toc-text">关键点</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-2"><span class="toc-number">2.2.3.3.</span> <span class="toc-text">思路#2</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E7%82%B9-4"><span class="toc-number">2.2.3.3.1.</span> <span class="toc-text">关键点</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-3"><span class="toc-number">2.2.3.4.</span> <span class="toc-text">思路#3</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E4%BB%A3%E7%A0%81-4"><span class="toc-number">2.2.3.4.1.</span> <span class="toc-text">关键代码</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E7%82%B9-5"><span class="toc-number">2.2.3.4.2.</span> <span class="toc-text">关键点</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE4-%E6%9C%80%E5%90%8E%E4%B8%80%E5%9D%97%E7%9F%B3%E5%A4%B4%E7%9A%84%E9%87%8D%E9%87%8F-II"><span class="toc-number">2.2.4.</span> <span class="toc-text">题目4 最后一块石头的重量 II</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-0-1"><span class="toc-number">2.2.4.1.</span> <span class="toc-text">思路#0</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E4%BB%A3%E7%A0%81-5"><span class="toc-number">2.2.4.1.1.</span> <span class="toc-text">关键代码</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE5-%E6%9C%89%E4%BE%9D%E8%B5%96%E7%9A%84%E8%83%8C%E5%8C%85-%E6%A8%A1%E7%89%88"><span class="toc-number">2.2.5.</span> <span class="toc-text">题目5 有依赖的背包(模版)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-0-2"><span class="toc-number">2.2.5.1.</span> <span class="toc-text">思路#0</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E4%BB%A3%E7%A0%81-6"><span class="toc-number">2.2.5.1.1.</span> <span class="toc-text">关键代码</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE6-%E9%9D%9E%E8%B4%9F%E6%95%B0%E7%BB%84%E5%89%8Dk%E4%B8%AA%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97%E7%B4%AF%E5%8A%A0%E5%92%8C"><span class="toc-number">2.2.6.</span> <span class="toc-text">题目6 非负数组前k个最小的子序列累加和</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E4%BB%A3%E7%A0%81-7"><span class="toc-number">2.2.6.0.1.</span> <span class="toc-text">关键代码</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%AF%8F%E6%97%A5%E7%AE%97%E6%B3%95"><span class="toc-number">3.</span> <span class="toc-text">每日算法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Daily-%E7%AE%97%E6%B3%95-P1002-NOIP-2002-%E6%99%AE%E5%8F%8A%E7%BB%84-%E8%BF%87%E6%B2%B3%E5%8D%92"><span class="toc-number">3.1.</span> <span class="toc-text">Daily::算法 @P1002 [NOIP 2002 普及组] 过河卒</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="toc-number">3.1.1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF"><span class="toc-number">3.1.2.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E4%BA%A4-0"><span class="toc-number">3.1.3.</span> <span class="toc-text">提交#0 &lt;-TLE</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E4%BA%A4-1-2"><span class="toc-number">3.1.4.</span> <span class="toc-text">提交#1 &lt;-60pt.</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E4%BA%A4-2"><span class="toc-number">3.1.5.</span> <span class="toc-text">提交#2 &lt;-60pt.</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E4%BA%A4-3"><span class="toc-number">3.1.6.</span> <span class="toc-text">提交#3 &lt;-AC</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E4%BB%A3%E7%A0%81-8"><span class="toc-number">3.1.6.1.</span> <span class="toc-text">关键代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E6%80%9D%E8%B7%AF"><span class="toc-number">3.1.6.2.</span> <span class="toc-text">关键思路</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E5%8C%96-0"><span class="toc-number">3.1.7.</span> <span class="toc-text">优化#0</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-1"><span class="toc-number">3.1.7.0.1.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E4%BB%A3%E7%A0%81-9"><span class="toc-number">3.1.7.0.2.</span> <span class="toc-text">关键代码</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%98%E5%8C%96-1"><span class="toc-number">3.1.7.1.</span> <span class="toc-text">优化#1</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-2"><span class="toc-number">3.1.7.1.1.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E4%BB%A3%E7%A0%81-10"><span class="toc-number">3.1.7.1.2.</span> <span class="toc-text">关键代码</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Daily-%E7%AE%97%E6%B3%95-P1255-%E6%95%B0%E6%A5%BC%E6%A2%AF"><span class="toc-number">3.2.</span> <span class="toc-text">Daily::算法 @P1255 数楼梯</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-1"><span class="toc-number">3.2.1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-3"><span class="toc-number">3.2.2.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E4%BA%A4-0-1"><span class="toc-number">3.2.3.</span> <span class="toc-text">提交#0 &lt;-50pt.</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E4%BA%A4-1-3"><span class="toc-number">3.2.4.</span> <span class="toc-text">提交#1 &lt;-60pt.</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E4%BA%A4-2-1"><span class="toc-number">3.2.5.</span> <span class="toc-text">提交#2 &lt;-AC</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E4%BB%A3%E7%A0%81-11"><span class="toc-number">3.2.5.1.</span> <span class="toc-text">关键代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E7%82%B9-6"><span class="toc-number">3.2.5.2.</span> <span class="toc-text">关键点</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%AE%B5%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98"><span class="toc-number">3.2.5.2.1.</span> <span class="toc-text">段错误问题</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Daily-%E7%AE%97%E6%B3%95-P1065-NOIP-2006-%E6%8F%90%E9%AB%98%E7%BB%84-%E4%BD%9C%E4%B8%9A%E8%B0%83%E5%BA%A6%E6%96%B9%E6%A1%88"><span class="toc-number">3.3.</span> <span class="toc-text">Daily::算法 @P1065 [NOIP 2006 提高组] 作业调度方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-2"><span class="toc-number">3.3.1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-4"><span class="toc-number">3.3.2.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%84"><span class="toc-number">3.3.3.</span> <span class="toc-text">抄</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84%E8%A7%A3%E6%9E%90"><span class="toc-number">3.3.3.1.</span> <span class="toc-text">代码结构解析</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-number">3.3.3.1.1.</span> <span class="toc-text">数据结构</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E9%80%BB%E8%BE%91"><span class="toc-number">3.3.3.1.2.</span> <span class="toc-text">主要逻辑</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90"><span class="toc-number">3.3.3.2.</span> <span class="toc-text">算法分析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%98%E5%8C%96%E5%BB%BA%E8%AE%AE"><span class="toc-number">3.3.3.3.</span> <span class="toc-text">优化建议</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Daily-%E7%AE%97%E6%B3%95-P1786-%E5%B8%AE%E8%B4%A1%E6%8E%92%E5%BA%8F"><span class="toc-number">3.4.</span> <span class="toc-text">Daily::算法 @P1786 帮贡排序</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-3"><span class="toc-number">3.4.1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-5"><span class="toc-number">3.4.2.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E4%BA%A4-0-2"><span class="toc-number">3.4.3.</span> <span class="toc-text">提交#0 &lt;-WA</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E4%BA%A4-1-4"><span class="toc-number">3.4.4.</span> <span class="toc-text">提交#1 &lt;-AC</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E4%BB%A3%E7%A0%81-12"><span class="toc-number">3.4.4.1.</span> <span class="toc-text">关键代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E7%82%B9-7"><span class="toc-number">3.4.4.2.</span> <span class="toc-text">关键点</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Daily-%E7%AE%97%E6%B3%95-P1068-NOIP-2009-%E6%99%AE%E5%8F%8A%E7%BB%84-%E5%88%86%E6%95%B0%E7%BA%BF%E5%88%92%E5%AE%9A"><span class="toc-number">3.5.</span> <span class="toc-text">Daily::算法 @P1068 [NOIP 2009 普及组] 分数线划定</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-4"><span class="toc-number">3.5.1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-6"><span class="toc-number">3.5.2.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E4%BA%A4-0-3"><span class="toc-number">3.5.3.</span> <span class="toc-text">提交#0 &lt;-80pt.</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E4%BA%A4-1-5"><span class="toc-number">3.5.4.</span> <span class="toc-text">提交#1 &lt;-AC</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E4%BB%A3%E7%A0%81"><span class="toc-number">3.5.4.1.</span> <span class="toc-text">核心代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E7%82%B9-8"><span class="toc-number">3.5.4.2.</span> <span class="toc-text">关键点</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Daily-%E7%AE%97%E6%B3%95-P2089-%E7%83%A4%E9%B8%A1"><span class="toc-number">3.6.</span> <span class="toc-text">Daily::算法 @P2089 烤鸡</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-5"><span class="toc-number">3.6.1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-7"><span class="toc-number">3.6.2.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E4%BA%A4-1-6"><span class="toc-number">3.6.3.</span> <span class="toc-text">提交#1 &lt;-AC</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E4%BB%A3%E7%A0%81-13"><span class="toc-number">3.6.3.1.</span> <span class="toc-text">关键代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E7%82%B9-9"><span class="toc-number">3.6.3.2.</span> <span class="toc-text">关键点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E5%8C%96-1"><span class="toc-number">3.6.4.</span> <span class="toc-text">优化</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Daily-%E7%AE%97%E6%B3%95-1-P1152-%E6%AC%A2%E4%B9%90%E7%9A%84%E8%B7%B3"><span class="toc-number">3.7.</span> <span class="toc-text">Daily::算法#1 @P1152 欢乐的跳</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-6"><span class="toc-number">3.7.1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-8"><span class="toc-number">3.7.2.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E4%BA%A4-1-7"><span class="toc-number">3.7.3.</span> <span class="toc-text">提交#1 &lt;-RE</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E4%BA%A4-2-2"><span class="toc-number">3.7.4.</span> <span class="toc-text">提交#2 &lt;-AC</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E4%BB%A3%E7%A0%81-14"><span class="toc-number">3.7.4.1.</span> <span class="toc-text">关键代码</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E5%8C%96-2"><span class="toc-number">3.7.5.</span> <span class="toc-text">优化</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Daily-%E7%AE%97%E6%B3%95-2-P1104-%E7%94%9F%E6%97%A5"><span class="toc-number">3.8.</span> <span class="toc-text">Daily::算法#2 @P1104 生日</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-7"><span class="toc-number">3.8.1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E4%BA%A4-1-8"><span class="toc-number">3.8.2.</span> <span class="toc-text">提交#1 &lt;-AC</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E4%BB%A3%E7%A0%81-15"><span class="toc-number">3.8.2.1.</span> <span class="toc-text">关键代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E7%82%B9-10"><span class="toc-number">3.8.2.2.</span> <span class="toc-text">关键点</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Daily-%E7%AE%97%E6%B3%95-3-P5143-%E6%94%80%E7%88%AC%E8%80%85"><span class="toc-number">3.9.</span> <span class="toc-text">Daily::算法#3 @P5143 攀爬者</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-8"><span class="toc-number">3.9.1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E4%BA%A4-1-9"><span class="toc-number">3.9.2.</span> <span class="toc-text">提交#1 &lt;-AC</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E4%BB%A3%E7%A0%81-16"><span class="toc-number">3.9.2.1.</span> <span class="toc-text">关键代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E7%82%B9-11"><span class="toc-number">3.9.2.2.</span> <span class="toc-text">关键点</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/16/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E8%AE%BA/" title="学习方法论">学习方法论</a><time datetime="2025-05-15T16:00:00.000Z" title="发表于 2025-05-16 00:00:00">2025-05-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/15/%E5%A6%82%E4%BD%95%E7%BB%98%E5%88%B6%E6%9F%B1%E7%8A%B6%E5%9B%BE%E5%9B%BE%E8%A1%A8/" title="如何绘制柱状图图表">如何绘制柱状图图表</a><time datetime="2025-05-14T16:00:00.000Z" title="发表于 2025-05-15 00:00:00">2025-05-15</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/15/%E6%AF%95%E4%B8%9A2025-%E6%9C%80%E7%BB%88%E6%80%BB%E7%BB%93/" title="毕业2025-最终总结">毕业2025-最终总结</a><time datetime="2025-05-14T16:00:00.000Z" title="发表于 2025-05-15 00:00:00">2025-05-15</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/13/%E5%AD%A6%E4%B9%A0%E5%91%A8%E6%8A%A5W08/" title="学习周报W08">学习周报W08</a><time datetime="2025-05-12T16:00:00.000Z" title="发表于 2025-05-13 00:00:00">2025-05-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/04/%E5%AD%A6%E4%B9%A0%E5%91%A8%E6%8A%A5W07/" title="学习周报W07">学习周报W07</a><time datetime="2025-05-03T16:00:00.000Z" title="发表于 2025-05-04 00:00:00">2025-05-04</time></div></div></div></div></div></div></main><footer id="footer" style="background-color: #00bfff;"><div id="footer-wrap"><div class="copyright">&copy;2025 By L4plAce</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">数字，哲学与爱</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'== 'shuoshuo'
+  const dqOption = null
+
+  const destroyDisqusjs = () => {
+    disqusjs.destroy()
+    window.disqusjs = null
+  }
+
+  const themeChange = (el, path) => {
+    destroyDisqusjs()
+    initDisqusjs(el, path)
+  }
+
+  const initDisqusjs = (el = document, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyDisqusjs = () => {
+        destroyDisqusjs()
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    disqusjs = new DisqusJS({
+      shortname: 'l4place',
+      title: '学习周报W07',
+      apikey: 'x13hKI63LwsTKgH9HQ2fBgsQ39NmUMQVj2awrSVw59kE94ALSCkeV5g1XAQZIpK8',
+      ...dqOption,
+      identifier: isShuoshuo ? path : (dqOption && dqOption.identifier) || '/2025/05/04/%E5%AD%A6%E4%B9%A0%E5%91%A8%E6%8A%A5W07/',
+      url: isShuoshuo ? location.origin + path : (dqOption && dqOption.url) || 'http://www.l4place.icu/2025/05/04/%E5%AD%A6%E4%B9%A0%E5%91%A8%E6%8A%A5W07/'
+    })
+
+    disqusjs.render(el.querySelector('#disqusjs-wrap'))
+
+    btf.addGlobalFn('themeChange', () => themeChange(el, path), 'disqusjs')
+  }
+
+  const loadDisqusjs = async(el, path) => {
+    if (window.disqusJsLoad) initDisqusjs(el, path)
+    else {
+      await btf.getCSS('https://cdn.jsdelivr.net/npm/disqusjs/dist/browser/styles/disqusjs.min.css')
+      await btf.getScript('https://cdn.jsdelivr.net/npm/disqusjs/dist/browser/disqusjs.es2015.umd.min.js')
+      initDisqusjs(el, path)
+      window.disqusJsLoad = true
+    }
+  }
+
+  const getCount = async() => {
+    try {
+      const eleGroup = document.querySelector('#post-meta .disqusjs-comment-count')
+      if (!eleGroup) return
+      const cleanedLinks = eleGroup.href.replace(/#post-comment$/, '')
+
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=l4place&api_key=x13hKI63LwsTKgH9HQ2fBgsQ39NmUMQVj2awrSVw59kE94ALSCkeV5g1XAQZIpK8&thread:link=${cleanedLinks}`,{
+        method: 'GET'
+      })
+      const result = await res.json()
+      const count = result.response.length ? result.response[0].posts : 0
+      eleGroup.textContent = count
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Disqusjs' === 'Disqusjs'
+      ? window.shuoshuoComment = { loadComment: loadDisqusjs }
+      : window.loadOtherComment = loadDisqusjs
+    return
+  }
+
+  if ('Disqusjs' === 'Disqusjs' || !false) {
+    if (false) btf.loadComment(document.getElementById('disqusjs-wrap'), loadDisqusjs)
+    else {
+      loadDisqusjs()
+      
+    }
+  } else {
+    window.loadOtherComment = loadDisqusjs
+  }
+})()</script></div><script>window.newestComments = {
+  changeContent: content => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<code>.*?<\/code>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g, "") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0, 150) + '...'
+    }
+    return content
+  },
+
+  generateHtml: (array, ele) => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class="aside-list-item">'
+
+        if (true && array[i].avatar) {
+          const imgAttr = 'src'
+          const lazyloadNative = ''
+          result += `<a href="${array[i].url}" class="thumbnail"><img ${imgAttr}="${array[i].avatar}" alt="${array[i].nick}" ${lazyloadNative}></a>`
+        }
+
+        result += `<div class="content">
+        <a class="comment" href="${array[i].url}" title="${array[i].content}">${array[i].content}</a>
+        <div class="name"><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += '暂无评论'
+    }
+
+    ele.innerHTML = result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh(ele)
+  },
+
+  newestCommentInit: (name, getComment) => {
+    const $dom = document.querySelector('#card-newest-comments .aside-list')
+    if ($dom) {
+      const data = btf.saveToLocal.get(name)
+      if (data) {
+        newestComments.generateHtml(JSON.parse(data), $dom)
+      } else {
+        getComment($dom)
+      }
+    }
+  },
+
+  run: (name, getComment) => {
+    newestComments.newestCommentInit(name, getComment)
+    btf.addGlobalFn('pjaxComplete', () => newestComments.newestCommentInit(name, getComment), name)
+  }
+}</script><script>window.addEventListener('load', () => {
+  const keyName = 'disqus-newest-comments'
+  const { changeContent, generateHtml, run } = window.newestComments
+
+  const getComment = ele => {
+    fetch('https://disqus.com/api/3.0/forums/listPosts.json?forum=l4place&related=thread&limit=6&api_key=x13hKI63LwsTKgH9HQ2fBgsQ39NmUMQVj2awrSVw59kE94ALSCkeV5g1XAQZIpK8')
+      .then(response => response.json())
+      .then(data => {
+        const disqusArray = data.response.map(item => {
+          return {
+            'avatar': item.author.avatar.cache,
+            'content': changeContent(item.message),
+            'nick': item.author.name,
+            'url': item.url,
+            'date': item.createdAt
+          }
+        })
+
+        btf.saveToLocal.set(keyName, JSON.stringify(disqusArray), 10/(60*24))
+        generateHtml(disqusArray, ele)
+      }).catch(e => {
+        console.error(e)
+        ele.textContent= "无法获取评论，请确认相关配置是否正确"
+      })
+  }
+
+  run(keyName, getComment)
+})</script><script defer src="https://fastly.jsdelivr.net/npm/live2d-widgets@0/autoload.js"></script><div class="aplayer no-destroy" data-id="2226764201" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-lrcType="-1"> </div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="true"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script>(() => {
+  const destroyAplayer = () => {
+    if (window.aplayers) {
+      for (let i = 0; i < window.aplayers.length; i++) {
+        if (!window.aplayers[i].options.fixed) {
+          window.aplayers[i].destroy()
+        }
+      }
+    }
+  }
+
+  const runMetingJS = () => {
+    typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+  }
+
+  btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
+  btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
+})()</script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: true,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      pjax.loadUrl('/404.html')
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/lite/builds/browser.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script></div></div></body></html>
