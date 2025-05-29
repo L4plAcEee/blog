@@ -198,20 +198,6 @@
   </url>
   
   <url>
-    <loc>http://www.l4place.icu/tags/hexo/</loc>
-    <lastmod>2025-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.l4place.icu/tags/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2025-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://www.l4place.icu/tags/%E7%AB%9E%E8%B5%9B/</loc>
     <lastmod>2025-05-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -233,7 +219,21 @@
   </url>
   
   <url>
-    <loc>http://www.l4place.icu/tags/%E7%88%AC%E8%99%AB/</loc>
+    <loc>http://www.l4place.icu/tags/TRY/</loc>
+    <lastmod>2025-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.l4place.icu/tags/hexo/</loc>
+    <lastmod>2025-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.l4place.icu/tags/%E5%89%8D%E7%AB%AF/</loc>
     <lastmod>2025-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -247,7 +247,7 @@
   </url>
   
   <url>
-    <loc>http://www.l4place.icu/tags/TRY/</loc>
+    <loc>http://www.l4place.icu/tags/%E7%88%AC%E8%99%AB/</loc>
     <lastmod>2025-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -284,13 +284,6 @@
 
   
   <url>
-    <loc>http://www.l4place.icu/categories/Web%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2025-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://www.l4place.icu/categories/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2025-05-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -299,6 +292,13 @@
   
   <url>
     <loc>http://www.l4place.icu/categories/%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/</loc>
+    <lastmod>2025-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.l4place.icu/categories/Web%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2025-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
