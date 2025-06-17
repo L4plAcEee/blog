@@ -1,0 +1,495 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>基于ChatGPT等生成式AI辅助计算机领域文献检索的优势与局限分析 | L4plAce</title><meta name="author" content="L4plAce"><meta name="copyright" content="L4plAce"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="article">
+<meta property="og:title" content="基于ChatGPT等生成式AI辅助计算机领域文献检索的优势与局限分析">
+<meta property="og:url" content="http://www.l4place.icu/2025/06/16/%E5%9F%BA%E4%BA%8EChatGPT%E7%AD%89%E7%94%9F%E6%88%90%E5%BC%8FAI%E8%BE%85%E5%8A%A9%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%A2%86%E5%9F%9F%E6%96%87%E7%8C%AE%E6%A3%80%E7%B4%A2%E7%9A%84%E4%BC%98%E5%8A%BF%E4%B8%8E%E5%B1%80%E9%99%90%E5%88%86%E6%9E%90/index.html">
+<meta property="og:site_name" content="L4plAce">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://www.l4place.icu/img/avatar.jpg">
+<meta property="article:published_time" content="2025-06-15T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-06-17T11:55:05.719Z">
+<meta property="article:author" content="L4plAce">
+<meta property="article:tag" content="最佳实践">
+<meta property="article:tag" content="课程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://www.l4place.icu/img/avatar.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "基于ChatGPT等生成式AI辅助计算机领域文献检索的优势与局限分析",
+  "url": "http://www.l4place.icu/2025/06/16/%E5%9F%BA%E4%BA%8EChatGPT%E7%AD%89%E7%94%9F%E6%88%90%E5%BC%8FAI%E8%BE%85%E5%8A%A9%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%A2%86%E5%9F%9F%E6%96%87%E7%8C%AE%E6%A3%80%E7%B4%A2%E7%9A%84%E4%BC%98%E5%8A%BF%E4%B8%8E%E5%B1%80%E9%99%90%E5%88%86%E6%9E%90/",
+  "image": "http://www.l4place.icu/img/avatar.jpg",
+  "datePublished": "2025-06-15T16:00:00.000Z",
+  "dateModified": "2025-06-17T11:55:05.719Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "l4place",
+      "url": "http://www.l4place.icu/blog.l4place.icu"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://www.l4place.icu/2025/06/16/%E5%9F%BA%E4%BA%8EChatGPT%E7%AD%89%E7%94%9F%E6%88%90%E5%BC%8FAI%E8%BE%85%E5%8A%A9%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%A2%86%E5%9F%9F%E6%96%87%E7%8C%AE%E6%A3%80%E7%B4%A2%E7%9A%84%E4%BC%98%E5%8A%BF%E4%B8%8E%E5%B1%80%E9%99%90%E5%88%86%E6%9E%90/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//www.clarity.ms"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="codeva-pm3JLit8G2"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?39def90aa4d3003d2e4e8308e7a8c9f3";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+btf.addGlobalFn('pjaxComplete', () => {
+  _hmt.push(['_trackPageview',window.location.pathname])
+}, 'baidu_analytics')
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-18VE0KD5YB"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', 'G-18VE0KD5YB')
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', 'G-18VE0KD5YB', {'page_path': window.location.pathname})
+}, 'google_analytics')
+</script><script>(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "q81b5s7cx2");</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: {"appId":"43KWPP3572","apiKey":"ee8951db0bf1102393ba02871176539f","indexName":"new_blog","hitsPerPage":6,"languages":{"input_placeholder":"搜索文章","hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，耗时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '基于ChatGPT等生成式AI辅助计算机领域文献检索的优势与局限分析',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-color: #F5F5DC;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-compass"></i><span> 导航</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about.html"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/flink.html"><i class="fa-fw fas fas fa-link"></i><span> 友情链接</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/index_top_img.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">L4plAce</span></a><a class="nav-page-title" href="/"><span class="site-name">基于ChatGPT等生成式AI辅助计算机领域文献检索的优势与局限分析</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-compass"></i><span> 导航</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about.html"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/flink.html"><i class="fa-fw fas fas fa-link"></i><span> 友情链接</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">基于ChatGPT等生成式AI辅助计算机领域文献检索的优势与局限分析</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-06-15T16:00:00.000Z" title="发表于 2025-06-16 00:00:00">2025-06-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-06-17T11:55:05.719Z" title="更新于 2025-06-17 19:55:05">2025-06-17</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B%E8%80%83%E6%A0%B8/">课程考核</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">7.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>22分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><div id="post-outdate-notice" data="{&quot;limitDay&quot;:365,&quot;messagePrev&quot;:&quot;自上次更新已经过了&quot;,&quot;messageNext&quot;:&quot;天，文章内容可能过期了哦！&quot;,&quot;postUpdate&quot;:&quot;2025-06-17 19:55:05&quot;}" hidden></div><h1 id="0-摘要"><a href="#0-摘要" class="headerlink" title="0. 摘要"></a>0. 摘要</h1><p>随着计算机领域文献数量的指数级增长，传统基于关键词的检索方法在查询效率和表达能力上面临显著瓶颈。本文聚焦生成式 AI（以 ChatGPT 为代表）在文献检索中的辅助作用，系统分析其在自然语言对话式检索、语义扩展与查询优化、快速摘要与要点提取，以及跨语言和跨领域检索等方面的优势。同时，深入探讨了生成式 AI 在知识更新滞后、内容“幻觉”现象、引用与溯源困难、隐私与版权风险，以及专业术语处理等关键局限。针对上述挑战，本文提出了生成式 AI 与传统数据库协同检索、强化人工核验、动态模型更新与插件接入，以及严格引用原始文献等改进建议。最后，展望了构建实时更新知识库、完善可追溯引用体系和优化提示工程的研究方向，为生成式 AI 在学术文献检索中成为高效、可靠的智能助手提供了路径指引。</p>
+<blockquote>
+<p>关键词：文献检索；人工智能；大语言模型；</p>
+</blockquote>
+<h1 id="1-引言"><a href="#1-引言" class="headerlink" title="1. 引言"></a>1. 引言</h1><h2 id="1-1-研究背景与意义"><a href="#1-1-研究背景与意义" class="headerlink" title="1.1 研究背景与意义"></a>1.1 研究背景与意义</h2><p>近年来，计算机领域的研究成果持续爆发式增长，导致相关文献数量呈现指数级上升趋势。这一现象在推动学术进步的同时，也给研究者带来了前所未有的检索压力。传统的关键词检索方法在面对庞大而复杂的文献库时，逐渐暴露出查询效率低下、检索结果覆盖率有限以及对复杂查询意图支持不足等问题。Blackburn 等人基于 ACM 数字图书馆中 1990–2012 年的文献与作者数据，分别从整体出版物、特殊兴趣小组（SIG）、顶级会议、机构、学者群体以及博士毕业生等多个视角展开定量分析，以期全面刻画计算机领域的出版与作者增长趋势。作者将研究者按发表持续年限划分为“新手”（Ne &#x3D; 2）、“成熟”（Ne &#x3D; 5）以及“资深”（Ne &#x3D; 10）三类，对比了不同经验层级的增长速率，并分别使用“原始论文数（raw count）”和“分权贡献度（fractional contribution）”两种指标来度量作者产出。研究发现，计算机领域论文总量以约9.3%&#x2F;年速度增长，约每八年翻一番；而作者总数的年均增长率高达10.6%，且在各经验层级中均保持一致。这一差异表明，新进入研究领域的作者人数增速超过论文产出增速，导致平均每位作者对单篇论文的“分权贡献度”下降，并进一步加剧了文献量的扩张与检索难度。^[Blackburn, S. M., McKinley, K. S., &amp; Xie, L. (2019). Author growth outstrips publication growth in computer science and publication quality correlates with collaboration. arXiv preprint arXiv:1909.02212.] 具体而言，研究者在使用传统检索工具时，往往需要多轮调整关键词组合，才能较为准确地获取所需文献，这无疑增加了学术调研的时间成本。</p>
+<p>在此背景下，生成式 AI 技术，尤其是以 ChatGPT 为代表的大语言模型，凭借其强大的自然语言理解与生成能力，展现出在文献检索领域的广阔应用前景。与传统检索方式相比，生成式 AI 不仅能够更好地理解复杂的自然语言查询，还可以根据用户的上下文信息动态生成检索建议，提升查询的相关性和准确性。孙伟伟，闫令勇等人在《Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agents》中的研究表明，经过合理提示的生成式大型语言模型具有强大的排序能力，不仅能够在现有数据上取得优异表现，在面对全新、未知知识时也具备良好的泛化能力。此外，通过排列蒸馏，可以将大型模型的排序能力有效压缩至小型模型中，显著提升推理效率，为实际搜索系统提供了新的可行路径。^[Sun, W., Yan, L., Ma, X., Wang, S., Ren, P., Chen, Z., … &amp; Ren, Z. (2023). Is ChatGPT good at search? investigating large language models as re-ranking agents. arXiv preprint arXiv:2304.09542.]此外，生成式 AI 具备一定的归纳与总结能力，能够在文献推荐过程中辅助用户快速理解文献主题与研究趋势，从而有效缓解信息过载问题。</p>
+<p>因此，基于 ChatGPT 等生成式 AI 的文献检索辅助机制，有望成为解决当前检索瓶颈的重要工具。然而，这一新兴技术在实际应用中仍存在诸多挑战和局限，亟需深入分析其优势与不足，以指导未来相关系统的设计与优化。</p>
+<h2 id="1-2-主要研究内容"><a href="#1-2-主要研究内容" class="headerlink" title="1.2 主要研究内容"></a>1.2 主要研究内容</h2><p>本文围绕生成式 AI（以 ChatGPT 为代表）在计算机领域文献检索中的应用展开系统分析，旨在通过全面的优劣对比，为学术界与技术开发者提供实践参考。面对海量信息环境，如何合理利用生成式 AI 提升检索效率、优化检索体验，是当前值得深入探讨的重要课题。</p>
+<p>首先，本文将重点梳理生成式 AI 辅助文献检索所带来的主要优势。生成式 AI 能够理解自然语言复杂查询，通过上下文理解和语义扩展生成高质量的检索建议，显著降低关键词设计难度，提升检索覆盖率。同时，生成式 AI 可以根据用户查询意图，动态调整推荐策略，具备一定的主动引导和归纳总结能力，有助于提高文献筛选的效率和质量。</p>
+<p>其次，本文也将系统阐述生成式 AI 在文献检索应用中的局限性。尽管生成式 AI 在对话式交互和语义理解方面具有显著优势，但其存在模型幻觉、生成结果不稳定、缺乏文献溯源能力等问题，可能导致检索结果的准确性与可验证性不足。此外，现阶段的生成式 AI 仍然高度依赖预训练数据，对于最新研究成果的覆盖滞后，容易遗漏前沿文献。</p>
+<p>最后，本文将基于对优势与局限的系统分析，提出针对性改进建议，如将生成式 AI 与传统检索系统深度融合、引入文献溯源机制、优化提示工程（Prompt Engineering）设计等，以期为生成式 AI 在学术文献检索中的应用提供切实可行的发展路径。</p>
+<h1 id="2-生成式-AI-辅助文献检索的主要优势"><a href="#2-生成式-AI-辅助文献检索的主要优势" class="headerlink" title="2. 生成式 AI 辅助文献检索的主要优势"></a>2. 生成式 AI 辅助文献检索的主要优势</h1><h2 id="2-1-自然语言对话式检索"><a href="#2-1-自然语言对话式检索" class="headerlink" title="2.1 自然语言对话式检索"></a>2.1 自然语言对话式检索</h2><h3 id="2-1-1-基于语义理解的检索模式"><a href="#2-1-1-基于语义理解的检索模式" class="headerlink" title="2.1.1 基于语义理解的检索模式"></a>2.1.1 基于语义理解的检索模式</h3><p>生成式 AI 支持自然语言对话式检索，显著降低了用户的操作门槛。与传统基于布尔运算符或特定搜索引擎语法的检索方式不同，用户无需掌握复杂的检索规则，仅需通过口语化或书面化的自然语言直接描述检索需求，AI 即可基于其强大的语义理解能力，自动解析用户意图并生成高质量的检索策略。</p>
+<p>这种对话式交互不仅提升了用户体验，还有效扩展了检索表达的灵活性。无论是模糊查询、复杂问题，还是多轮补充需求，生成式 AI 均能够通过自然语言连续理解与调整，动态优化检索路径。Fengran Mo, Kelong Mao等人，在《A Survey of Conversational Search》中提出：搜索引擎作为现代信息获取的基础工具，在日常生活中已经不可或缺。随着人工智能和自然语言处理（NLP）技术的快速发展，尤其是大型语言模型（LLMs）的广泛应用，搜索引擎的交互方式正从传统的关键词检索逐步演变为更加自然、智能的对话式搜索（Conversational Search）模式。并系统回顾了对话式搜索的研究进展，重点分析了其核心技术与未来发展趋势。对话式搜索作为新一代搜索引擎的重要方向，具备以下优势：1.支持复杂查询意图的表达。2.能够在多轮对话中持续维护用户上下文。提供更强的信息整合与处理能力，显著提升用户体验。^[Mo, F., Mao, K., Zhao, Z., Qian, H., Chen, H., Cheng, Y., … &amp; Nie, J. Y. (2024). A survey of conversational search. arXiv preprint arXiv:2410.15576.]。相比传统检索方式，这种模式极大地降低了非专业用户的使用门槛，并有助于提升检索效率和结果的相关性。</p>
+<h3 id="2-1-2-基于多轮对话式的交互式筛选与个性化推荐"><a href="#2-1-2-基于多轮对话式的交互式筛选与个性化推荐" class="headerlink" title="2.1.2 基于多轮对话式的交互式筛选与个性化推荐"></a>2.1.2 基于多轮对话式的交互式筛选与个性化推荐</h3><p>生成式 AI 支持多轮对话式的交互式筛选与个性化推荐，显著提升了文献检索的精准性与灵活性。与传统检索系统一次性返回静态结果不同，生成式 AI 能够在检索过程中持续接受用户反馈，并根据用户的即时指令（例如“我想要更多关于 XXX 的案例研究”）动态调整推荐列表。</p>
+<p>这一机制允许用户逐步细化检索需求，通过实时交互不断优化文献筛选标准。AI 不仅可以根据用户反馈调整关键词、限定研究方向，还能智能调整推荐排序，确保检索结果与用户期望持续趋近。交互式推荐突破了传统系统对检索路径的单一依赖，为用户提供了更加灵活、高效、可控的文献检索体验。</p>
+<h2 id="2-2-查询优化和检索增强能力"><a href="#2-2-查询优化和检索增强能力" class="headerlink" title="2.2 查询优化和检索增强能力"></a>2.2 查询优化和检索增强能力</h2><h2 id="2-2-1-语义扩展与查询优化"><a href="#2-2-1-语义扩展与查询优化" class="headerlink" title="2.2.1 语义扩展与查询优化"></a>2.2.1 语义扩展与查询优化</h2><p>生成式 AI 在文献检索中具备显著的语义扩展与查询优化能力。传统关键词匹配方式往往局限于字面相同或简单变体，容易遗漏与查询意图紧密相关但表达不同的文献。而生成式 AI 能够基于上下文深入理解用户需求，自动生成同义词、相关术语以及计算机领域内的专业词汇，从而有效扩展检索范围，提升文献的召回率。Rolf Jagerman, Honglei Zhuang在《Query Expansion by Prompting Large Language Models》指出：查询扩展（Query Expansion）是信息检索系统中常用的技术，旨在通过扩展原始查询，提升搜索系统的召回率。传统方法如伪相关反馈（Pseudo-Relevance Feedback，PRF），通常依赖从检索结果中获取伪相关文档，再据此进行扩展。然而，这类方法对检索初始结果的质量高度敏感，存在一定局限。但是作者也提出了一种新颖的查询扩展方法，充分利用大型语言模型（LLMs）的生成能力，与传统方法相比具有如下优势：1.摆脱对伪相关文档的依赖。2.多种提示策略设计。3.思维链提示的优势。作者等人以此想法在 MS-MARCO 和 BEIR 数据集上进行了实验，实验结果表明：基于 LLMs 的查询扩展在检索表现上超过传统查询扩展方法（如 PRF）;LLMs 在扩展词的丰富性和相关性上表现出更强的能力。^[Jagerman, R., Zhuang, H., Qin, Z., Wang, X., &amp; Bendersky, M. (2023). Query expansion by prompting large language models. arXiv preprint arXiv:2305.03653.]</p>
+<p>此外，生成式 AI 可以智能识别查询中的潜在歧义，并通过调整查询结构或推荐补充关键词，优化检索路径，进一步提高结果的相关性和准确性。这一过程不仅减少了用户手动调整查询策略的时间，也显著改善了复杂检索场景下的使用体验。语义扩展与查询优化能力是生成式 AI 在文献检索中区别于传统检索系统的核心优势之一。</p>
+<h2 id="2-2-2-快速摘要与要点提取"><a href="#2-2-2-快速摘要与要点提取" class="headerlink" title="2.2.2 快速摘要与要点提取"></a>2.2.2 快速摘要与要点提取</h2><p>生成式 AI 在文献检索后续处理阶段展现出显著的快速摘要与要点提取能力。面对检索到的大量文献，用户往往需要投入大量时间逐篇阅读以获取关键信息，而生成式 AI 能够通过对文献内容的自动解析，快速生成简明摘要，并高效提炼每篇文献的核心贡献点。Aditi Godbole, Jabin Geevarghese George等人在《Leveraging Long-Context Large Language Models for Multi-Document Understanding and Summarization in Enterprise Applications》聚焦于如何利用长上下文大语言模型（Long-context LLMs）处理和总结多文档，特别针对企业应用中的非结构化数据激增问题。作者指出：1.传统多文档总结方法在捕捉上下文、保持逻辑一致性和提取关键信息方面存在明显不足。2.长上下文 LLMs 能够有效理解跨文档的深层关联，生成连贯、准确的总结，且具备较强的跨行业适配性。^[Godbole, A., George, J. G., &amp; Shandilya, S. (2025). Leveraging long-context large language models for multi-document understanding and summarization in enterprise applications. In International Conference on Business Intelligence, Computational Mathematics, and Data Analytics (pp. 208-224). Springer, Cham.]上下文 LLM 为企业级多文档理解与总结提供了高潜力的解决方案，但在实际部署中仍需重视数据多样性、模型偏差与伦理风险，确保技术落地的可靠性与公平性。</p>
+<p>更重要的是，生成式 AI 还可根据用户需求，将文献的关键信息按研究方法、实验结果、应用场景等不同维度进行结构化归类，帮助用户快速把握当前研究领域的发展脉络与知识分布。此类基于生成式 AI 的要点提取功能，显著提升了文献处理效率，有助于研究者在短时间内完成高质量的文献综述与信息筛选。</p>
+<h2 id="2-2-3-跨语言与跨领域检索"><a href="#2-2-3-跨语言与跨领域检索" class="headerlink" title="2.2.3 跨语言与跨领域检索"></a>2.2.3 跨语言与跨领域检索</h2><p>生成式 AI 在支持跨语言与跨领域文献检索方面展现出独特优势。Changjiang Gao, Hankun Lin等人的研究《Understanding LLMs’ Cross-Lingual Context Retrieval: How Good It Is And Where It Comes From》探讨了大语言模型（LLMs）在跨语言上下文检索（Cross-Lingual Context Retrieval, CLCR）方面的能力，并首次系统性分析了该能力的形成过程及影响因素。作者采用跨语言机器阅读理解（xMRC）作为主要测试场景，全面评估了超过 40 个主流 LLM 在 12 种语言下的跨语言检索表现。研究表明部分经过后训练的小规模开源模型，其跨语言检索能力可与 GPT-4o 等闭源模型媲美，且在经过后训练（post-training）后，表现有显著提升。^[Gao, C., Lin, H., Huang, S., Huang, X., Han, X., Feng, J., … &amp; Chen, J. (2025). Understanding LLMs’ Cross-Lingual Context Retrieval: How Good It Is And Where It Comes From. <em>arXiv preprint arXiv:2504.10906</em>.]所以，生成式 AI 具备强大的多语言处理与即时翻译能力，允许用户直接使用母语进行检索，同时能够理解并处理不同语种的文献资源，从而有效突破语言壁垒，帮助研究者获取更广泛、更加全面的非母语文献。</p>
+<p>其次，生成式 AI 在跨领域知识迁移上具有明显优势。通过理解不同学科的术语体系与研究背景，AI 能够主动将其他领域（如医学、物理、社会科学）中的相关理论、方法或应用场景，智能引入计算机领域的文献检索推荐中。这种跨领域的检索能力，有助于拓展研究视野，促进学科交叉与技术创新，为计算机领域的前沿探索提供新的研究路径。</p>
+<h1 id="3-生成式-AI-辅助文献检索的主要局限"><a href="#3-生成式-AI-辅助文献检索的主要局限" class="headerlink" title="3. 生成式 AI 辅助文献检索的主要局限"></a>3. 生成式 AI 辅助文献检索的主要局限</h1><h2 id="3-1-内容的不可靠性"><a href="#3-1-内容的不可靠性" class="headerlink" title="3.1 内容的不可靠性"></a>3.1 内容的不可靠性</h2><h3 id="3-1-1-知识截止与更新滞后"><a href="#3-1-1-知识截止与更新滞后" class="headerlink" title="3.1.1 知识截止与更新滞后"></a>3.1.1 知识截止与更新滞后</h3><p>当前生成式 AI 在文献检索应用中存在显著的知识截止与更新滞后问题。绝大多数主流大语言模型的训练数据均截止于特定时间节点，这意味着其对最新发表的会议论文、期刊文章以及快速发展的前沿研究往往无法及时掌握。Aditi Singh, Abul Ehtesham等人在《Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG》指出大型语言模型（LLMs）推动了人工智能的发展，实现了类人文本生成与自然语言理解。然而，LLMs 固定的训练数据限制了其对实时查询的响应能力，容易产生过时或不准确的回答^[Singh, A., Ehtesham, A., Kumar, S., &amp; Khoei, T. T. (2025). Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG. arXiv preprint arXiv:2501.09136.]。尤其在计算机领域，学术成果迭代速度极快，生成式 AI 由于缺乏实时数据更新机制，容易导致遗漏重要的新兴研究。</p>
+<p>此外，生成式 AI 并非实时检索工具，其知识库更多来源于预训练阶段的数据快照，对于会议和期刊等动态信息源的实时响应能力有限。这一局限直接影响了生成式 AI 在快速获取最新学术成果时的有效性与时效性。因此，如何通过技术手段解决知识更新滞后问题，是生成式 AI 在学术文献检索中进一步应用的关键挑战之一。</p>
+<h2 id="3-1-2-危险的“幻觉”现象"><a href="#3-1-2-危险的“幻觉”现象" class="headerlink" title="3.1.2 危险的“幻觉”现象"></a>3.1.2 危险的“幻觉”现象</h2><p>生成式 AI 在文献检索与信息生成过程中存在内容可靠性问题，尤其是“幻觉”（hallucination）现象的不可忽视风险。所谓幻觉，指的是生成式 AI 在回答问题或生成文献摘要时，可能凭空捏造不存在的研究成果、作者信息或文献引用，甚至出现错误归纳和事实性偏差Stephanie Lin, Jacob Hilton等人在ACL 2022年会中以《TruthfulQA: Measuring How Models Mimic Human Falsehoods》一文指出现有的大型语言模型（LLMs）在自然语言生成任务中展现了强大的能力，但缺乏<strong>真理性（Truthfulness）</strong>，容易生成错误信息，尤其是模仿了人类社会中广泛传播的错误观念。当前 NLP 评价体系较少关注模型输出的真实性问题。该文提出了TruthfulQA基准测试集，用于系统性衡量语言模型是否倾向于生成符合人类错误认知的回答。并在以下几个模型（GPT-3、GPT-Neo&#x2F;J、GPT-2、T5 系列模型）上进行了实验，实验结果表明：GPT-3 在 TruthfulQA 上的真实性得分仅为 58%，而人类正确率为 94%。大模型通常更容易生成错误回答，且这些错误多为模仿人类常见误区的结果。这一现象与 NLP 其他任务形成鲜明对比：在许多任务中，模型规模越大，表现越好；但在真实性任务上，规模更大的模型可能更容易“复制”错误。^[Lin, S., Hilton, J., &amp; Evans, O. (2022). TruthfulQA: Measuring how models mimic human falsehoods. In S. Muresan, P. Nakov, &amp; A. Villavicencio (Eds.), <em>Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</em> (pp. 3214–3252). Association for Computational Linguistics.]</p>
+<p>这一问题在学术场景尤为敏感，因为文献检索强调数据来源的准确性与可验证性。一旦生成式 AI 提供虚构或错误的信息，极有可能误导用户的学术判断，影响后续的研究质量。此外，由于当前生成式 AI 多缺乏对答案出处的明确溯源能力，用户难以对生成内容进行快速验证，这进一步放大了其内容生成的不确定性。</p>
+<p>因此，内容生成可靠性问题是生成式 AI 辅助文献检索应用中亟需解决的核心挑战。未来系统设计应加强检索结果的可追溯性，避免 AI 输出未经验证的信息。</p>
+<h2 id="3-2-潜在的侵权风险"><a href="#3-2-潜在的侵权风险" class="headerlink" title="3.2 潜在的侵权风险"></a>3.2 潜在的侵权风险</h2><h3 id="3-2-1-引用与溯源困难"><a href="#3-2-1-引用与溯源困难" class="headerlink" title="3.2.1 引用与溯源困难"></a>3.2.1 引用与溯源困难</h3><p>在文献检索应用中，生成式 AI 的引用与溯源能力存在明显不足。与传统学术数据库（如 IEEE、ACM、Google Scholar）提供标准化文献引用与直接溯源路径不同，生成式 AI 输出的推荐结果、文献摘要或相关文献信息往往缺少完整、规范的引用格式，且文献出处不明确。</p>
+<p>这一问题使得用户在使用 AI 推荐结果时，必须额外投入时间对文献的真实性、作者、出版时间及期刊来源进行人工核实，否则容易出现引用虚假文献或遗漏关键检索细节的风险。尤其在需要精确参考文献的学术写作与系统性综述中，AI 的引用与溯源不透明会显著影响检索的严谨性与学术价值。</p>
+<p>因此，当前生成式 AI 在文献检索场景下仍无法取代传统数据库的标准化溯源功能，如何完善引用信息与提升溯源精度，是未来生成式 AI 学术应用亟需重点突破的问题。</p>
+<h3 id="3-2-2-隐私与版权风险"><a href="#3-2-2-隐私与版权风险" class="headerlink" title="3.2.2 隐私与版权风险"></a>3.2.2 隐私与版权风险</h3><p>生成式 AI 在处理受版权保护的文献时，存在潜在的法律合规与隐私保护风险。一方面，当 AI 对付费期刊、会议论文或专利文献进行自动摘要或直接转载核心内容时，可能侵犯原始著作权人的复制和展示权，尤其是在缺乏明确授权或超出“合理使用”范围的场景下。《Generative AI Has an Intellectual Property Problem》一文指出：生成式 AI 正在广泛应用于创意行业，其通过利用数据湖和问题片段（question snippets）来提取模式与关系。然而，当前关于生成式 AI 的法律适用仍存在诸多不确定性，生成式 AI 的法律框架尚在快速演变中，企业在应用此类技术时，应重视版权合规与数据许可问题，提前布局风控措施，以减少潜在的法律纠纷。^[J. Neelbauer, “Generative AI Has an Intellectual Property Problem,” <em>Harvard Business Review</em>, Apr. 2023.]若未经许可将大量受保护文本公开发布，易引发版权纠纷与侵权诉讼。</p>
+<p>另一方面，使用云端服务进行检索和生成时，研究者上传的文献或个人查询历史可能包含敏感信息，如未公开的实验数据、商业机密或个人隐私。若云服务提供商对数据保护机制不完善，存在数据泄露或滥用的风险，可能导致研究成果或个人信息外泄。同时，不同地区的隐私法规（如 GDPR、CCPA）对数据存储与跨境传输有严格要求，研究者需确保 AI 平台满足合规性标准。</p>
+<p>因此，为降低隐私与版权风险，建议在系统设计中引入以下措施：一是实现内容引用限额与审查机制，对摘要长度与可公开信息量加以控制；二是加强文献上传与存储的加密保护，并明确数据使用协议；三是集成版权声明与许可管理功能，自动提示用户在摘要或引用时标注原始来源与使用权限。通过技术与流程的多重保障，方能在享受生成式 AI 高效检索优势的同时，有效规避法律与隐私风险。</p>
+<h2 id="3-3-领域深度与专业术语处理问题"><a href="#3-3-领域深度与专业术语处理问题" class="headerlink" title="3.3 领域深度与专业术语处理问题"></a>3.3 领域深度与专业术语处理问题</h2><p>生成式 AI 在处理高度专业化或前沿领域术语时，可能因训练数据覆盖不足而出现识别不准或生成错误的情况。对于新兴概念、专门化符号或极细分学科领域的专有名词，AI 往往难以准确匹配其精确含义，导致检索时遗漏关键文献或将无关材料误纳入结果。</p>
+<p>此外，不同学科内部术语常伴随高度上下文依赖性，AI 在缺少足够领域监督信息的情况下，难以判断某些术语在特定研究背景中的特定含义，从而影响检索的召回率与精准度。Huu Tan Mai, Cuong Xuan Chu等人在《Do LLMs Really Adapt to Domains? An Ontology Learning Perspective》探讨了大语言模型（LLMs）在领域适应性与本体学习（Ontology Learning, OL）中的实际能力，重点分析其是否真正具备推理能力，还是仅依赖于对词汇意义的模式学习。作者通过设计对照实验，使用 WordNet 合成平行语料库（包括英文词汇与无意义词汇）进行验证，重点考察两个 OL 任务：1.关系抽取（Relation Extraction）。2.分类体系发现（Taxonomy Discovery）。实验结果表明：LLM 在面对无意义词汇语料时，并不能稳定地推理概念之间的语义关系，更多是依赖词汇习得的意义与框架；通过微调，LLM 能有效提升在词汇语义任务上的表现，即使面对领域专属、训练阶段未出现的新词汇，也显示出较好的适应性。^[Mai, H. T., Chu, C. X., &amp; Paulheim, H. (2024, November). Do LLMs really adapt to domains? An ontology learning perspective. In <em>International Semantic Web Conference</em> (pp. 126-143). Cham: Springer Nature Switzerland.]因此，LLM 原生状态下并不总能真正实现领域推理，其优势主要体现在词汇层面的学习。但是微调可以显著改善 LLM 在领域本体学习中的应用前景，即便数据存在词汇重定义现象。所以，提示预训练大模型在 Ontology Learning 场景下，仍需配合领域适配策略以确保知识结构提取的准确性。</p>
+<h1 id="4-总结与展望"><a href="#4-总结与展望" class="headerlink" title="4. 总结与展望"></a>4. 总结与展望</h1><h2 id="4-1-总结与建议"><a href="#4-1-总结与建议" class="headerlink" title="4.1 总结与建议"></a>4.1 总结与建议</h2><p>一、协同使用生成式 AI 与传统学术数据库<br>将 ChatGPT 等生成式 AI 作为辅助工具，与 IEEE Xplore、ACM Digital Library 等权威数据库并用，可在检索覆盖率与语义理解能力之间形成互补。传统数据库负责高精度的文献溯源与元数据检索，生成式 AI 则擅长理解复杂查询、推荐相关文献主题和扩展查询表达，从而提升整体检索效率。</p>
+<p>二、强化人工核验机制<br>对 AI 推荐的文献条目与自动生成的摘要，必须进行手动核验，以确保引用信息的准确性与完整性。通过严格的人工审查流程，可有效规避 AI “幻觉”现象和溯源不明带来的学术风险，维护研究成果的可靠性。</p>
+<p>三、定期更新与插件接入<br>为解决模型训练数据截止导致的知识滞后问题，建议定期对生成式 AI 进行再训练，并通过插件或 API 实时接入最新文献索引。这样可确保系统持续覆盖前沿研究，为用户提供最新、完整的检索结果。</p>
+<p>四、严谨引用原始文献<br>在学术写作与报告中，仅引用原始文献，不直接摘录或引用 AI 生成的摘要或段落。此举不仅遵循学术规范，还可保证引用质量，使研究成果的论据来源明确、可验证。</p>
+<h2 id="4-2-展望"><a href="#4-2-展望" class="headerlink" title="4.2 展望"></a>4.2 展望</h2><p>尽管生成式 AI 在自然语言理解、语义扩展与快速摘要方面展现出巨大潜力，但在实时更新、专业深度与引用溯源等方面仍存在显著挑战。未来的研究应聚焦于：一是构建动态更新的知识库；二是完善可追溯的引用体系；三是优化提示工程以增强专业术语处理能力。只有在技术、流程与法规层面多管齐下，生成式 AI 才能成为科研工作中真正可靠、高效的智能助手，辅助科研之路方能走得更远、更稳。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="blog.l4place.icu">l4place</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://www.l4place.icu/2025/06/16/%E5%9F%BA%E4%BA%8EChatGPT%E7%AD%89%E7%94%9F%E6%88%90%E5%BC%8FAI%E8%BE%85%E5%8A%A9%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%A2%86%E5%9F%9F%E6%96%87%E7%8C%AE%E6%A3%80%E7%B4%A2%E7%9A%84%E4%BC%98%E5%8A%BF%E4%B8%8E%E5%B1%80%E9%99%90%E5%88%86%E6%9E%90/">http://www.l4place.icu/2025/06/16/%E5%9F%BA%E4%BA%8EChatGPT%E7%AD%89%E7%94%9F%E6%88%90%E5%BC%8FAI%E8%BE%85%E5%8A%A9%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%A2%86%E5%9F%9F%E6%96%87%E7%8C%AE%E6%A3%80%E7%B4%A2%E7%9A%84%E4%BC%98%E5%8A%BF%E4%B8%8E%E5%B1%80%E9%99%90%E5%88%86%E6%9E%90/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">除特別声明外，本博客所有文章均遵守 WTFPL 许可。</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/">最佳实践</a><a class="post-meta__tags" href="/tags/%E8%AF%BE%E7%A8%8B/">课程</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2025/04/20/GitHub%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E4%B9%8B%E5%8F%91%E8%B5%B7%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAPR/" title="GitHub最佳实践之发起你的第一个PR"><img class="cover" src="/img/default_post_cover.webp" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-04-20</div><div class="info-item-2">GitHub最佳实践之发起你的第一个PR</div></div><div class="info-2"><div class="info-item-1">你可以把 Git 比作是一本笔记本，而 GitHub 就像是一个云笔记平台（比如Evernote），它让你可以随时随地访问、分享和协作管理你的笔记（代码）。</div></div></div></a><a class="pagination-related" href="/2025/05/16/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E8%AE%BA/" title="学习方法论"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-05-16</div><div class="info-item-2">学习方法论</div></div><div class="info-2"><div class="info-item-1">人终究是不完备的，终究是不可能看清道的。</div></div></div></a><a class="pagination-related" href="/2025/06/06/JavaWeb%E5%A4%8D%E4%B9%A0%E6%8C%87%E5%8C%97/" title="JavaWeb复习指北"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-06</div><div class="info-item-2">JavaWeb复习指北</div></div><div class="info-2"><div class="info-item-1">来自底层的魅力：Servlet和它的子子孙孙</div></div></div></a><a class="pagination-related" href="/2025/04/04/TRY-%E5%86%99%E4%B8%80%E4%BB%BD%E5%AE%9E%E4%B9%A0%E6%8A%A5%E5%91%8A%E5%BA%95%E7%A8%BF/" title="TRY-写一份实习报告发言稿"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-04-04</div><div class="info-item-2">TRY-写一份实习报告发言稿</div></div><div class="info-2"><div class="info-item-1">思维在指尖流动，所以诞生了文字，文字本没有想法，却被人赋予了灵魂。</div></div></div></a><a class="pagination-related" href="/2025/06/16/%E5%9F%BA%E4%BA%8Ebilibili%E5%93%88%E5%9F%BA%E7%B1%B3%E9%9F%B3%E4%B9%90%E8%A7%86%E9%A2%91%E7%9A%84%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F%E5%88%86%E6%9E%90%E4%B8%8E%E5%88%86%E7%B1%BB%E7%A0%94%E7%A9%B6/" title="基于bilibili哈基米音乐视频的用户画像分析与分类研究"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-16</div><div class="info-item-2">基于bilibili哈基米音乐视频的用户画像分析与分类研究</div></div><div class="info-2"><div class="info-item-1">通过中文NLP与聚类算法，挖掘用户情感倾向、兴趣主题分布及活跃度分级，为个性化推荐、舆情监测和内容优化提供数据支撑。</div></div></div></a><a class="pagination-related" href="/2025/04/20/%E8%AF%BE%E7%A8%8B%E8%80%83%E6%A0%B8-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A/" title="【课程考核】渗透测试报告"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-04-20</div><div class="info-item-2">【课程考核】渗透测试报告</div></div><div class="info-2"><div class="info-item-1">关于企业网渗透测试的一次实战（或许是），以及体验了实际的渗透测试报告是如何写的。</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="disqusjs-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">L4plAce</div><div class="author-info-description">Laplace，逆熵的妖怪</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/L4plAcEee"><i class="fab fa-github"></i><span>View in Github</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">如果图片碎了那就证明你需要挂梯子了 :- (</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#0-%E6%91%98%E8%A6%81"><span class="toc-number">1.</span> <span class="toc-text">0. 摘要</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E5%BC%95%E8%A8%80"><span class="toc-number">2.</span> <span class="toc-text">1. 引言</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-%E7%A0%94%E7%A9%B6%E8%83%8C%E6%99%AF%E4%B8%8E%E6%84%8F%E4%B9%89"><span class="toc-number">2.1.</span> <span class="toc-text">1.1 研究背景与意义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-%E4%B8%BB%E8%A6%81%E7%A0%94%E7%A9%B6%E5%86%85%E5%AE%B9"><span class="toc-number">2.2.</span> <span class="toc-text">1.2 主要研究内容</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E7%94%9F%E6%88%90%E5%BC%8F-AI-%E8%BE%85%E5%8A%A9%E6%96%87%E7%8C%AE%E6%A3%80%E7%B4%A2%E7%9A%84%E4%B8%BB%E8%A6%81%E4%BC%98%E5%8A%BF"><span class="toc-number">3.</span> <span class="toc-text">2. 生成式 AI 辅助文献检索的主要优势</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%AF%B9%E8%AF%9D%E5%BC%8F%E6%A3%80%E7%B4%A2"><span class="toc-number">3.1.</span> <span class="toc-text">2.1 自然语言对话式检索</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-1-%E5%9F%BA%E4%BA%8E%E8%AF%AD%E4%B9%89%E7%90%86%E8%A7%A3%E7%9A%84%E6%A3%80%E7%B4%A2%E6%A8%A1%E5%BC%8F"><span class="toc-number">3.1.1.</span> <span class="toc-text">2.1.1 基于语义理解的检索模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-2-%E5%9F%BA%E4%BA%8E%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E5%BC%8F%E7%9A%84%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%AD%9B%E9%80%89%E4%B8%8E%E4%B8%AA%E6%80%A7%E5%8C%96%E6%8E%A8%E8%8D%90"><span class="toc-number">3.1.2.</span> <span class="toc-text">2.1.2 基于多轮对话式的交互式筛选与个性化推荐</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96%E5%92%8C%E6%A3%80%E7%B4%A2%E5%A2%9E%E5%BC%BA%E8%83%BD%E5%8A%9B"><span class="toc-number">3.2.</span> <span class="toc-text">2.2 查询优化和检索增强能力</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-1-%E8%AF%AD%E4%B9%89%E6%89%A9%E5%B1%95%E4%B8%8E%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96"><span class="toc-number">3.3.</span> <span class="toc-text">2.2.1 语义扩展与查询优化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-2-%E5%BF%AB%E9%80%9F%E6%91%98%E8%A6%81%E4%B8%8E%E8%A6%81%E7%82%B9%E6%8F%90%E5%8F%96"><span class="toc-number">3.4.</span> <span class="toc-text">2.2.2 快速摘要与要点提取</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-3-%E8%B7%A8%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%B7%A8%E9%A2%86%E5%9F%9F%E6%A3%80%E7%B4%A2"><span class="toc-number">3.5.</span> <span class="toc-text">2.2.3 跨语言与跨领域检索</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E7%94%9F%E6%88%90%E5%BC%8F-AI-%E8%BE%85%E5%8A%A9%E6%96%87%E7%8C%AE%E6%A3%80%E7%B4%A2%E7%9A%84%E4%B8%BB%E8%A6%81%E5%B1%80%E9%99%90"><span class="toc-number">4.</span> <span class="toc-text">3. 生成式 AI 辅助文献检索的主要局限</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-%E5%86%85%E5%AE%B9%E7%9A%84%E4%B8%8D%E5%8F%AF%E9%9D%A0%E6%80%A7"><span class="toc-number">4.1.</span> <span class="toc-text">3.1 内容的不可靠性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-1-%E7%9F%A5%E8%AF%86%E6%88%AA%E6%AD%A2%E4%B8%8E%E6%9B%B4%E6%96%B0%E6%BB%9E%E5%90%8E"><span class="toc-number">4.1.1.</span> <span class="toc-text">3.1.1 知识截止与更新滞后</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-2-%E5%8D%B1%E9%99%A9%E7%9A%84%E2%80%9C%E5%B9%BB%E8%A7%89%E2%80%9D%E7%8E%B0%E8%B1%A1"><span class="toc-number">4.2.</span> <span class="toc-text">3.1.2 危险的“幻觉”现象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-%E6%BD%9C%E5%9C%A8%E7%9A%84%E4%BE%B5%E6%9D%83%E9%A3%8E%E9%99%A9"><span class="toc-number">4.3.</span> <span class="toc-text">3.2 潜在的侵权风险</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-1-%E5%BC%95%E7%94%A8%E4%B8%8E%E6%BA%AF%E6%BA%90%E5%9B%B0%E9%9A%BE"><span class="toc-number">4.3.1.</span> <span class="toc-text">3.2.1 引用与溯源困难</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-2-%E9%9A%90%E7%A7%81%E4%B8%8E%E7%89%88%E6%9D%83%E9%A3%8E%E9%99%A9"><span class="toc-number">4.3.2.</span> <span class="toc-text">3.2.2 隐私与版权风险</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-%E9%A2%86%E5%9F%9F%E6%B7%B1%E5%BA%A6%E4%B8%8E%E4%B8%93%E4%B8%9A%E6%9C%AF%E8%AF%AD%E5%A4%84%E7%90%86%E9%97%AE%E9%A2%98"><span class="toc-number">4.4.</span> <span class="toc-text">3.3 领域深度与专业术语处理问题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-%E6%80%BB%E7%BB%93%E4%B8%8E%E5%B1%95%E6%9C%9B"><span class="toc-number">5.</span> <span class="toc-text">4. 总结与展望</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-%E6%80%BB%E7%BB%93%E4%B8%8E%E5%BB%BA%E8%AE%AE"><span class="toc-number">5.1.</span> <span class="toc-text">4.1 总结与建议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-%E5%B1%95%E6%9C%9B"><span class="toc-number">5.2.</span> <span class="toc-text">4.2 展望</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/06/16/%E5%9F%BA%E4%BA%8EChatGPT%E7%AD%89%E7%94%9F%E6%88%90%E5%BC%8FAI%E8%BE%85%E5%8A%A9%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%A2%86%E5%9F%9F%E6%96%87%E7%8C%AE%E6%A3%80%E7%B4%A2%E7%9A%84%E4%BC%98%E5%8A%BF%E4%B8%8E%E5%B1%80%E9%99%90%E5%88%86%E6%9E%90/" title="基于ChatGPT等生成式AI辅助计算机领域文献检索的优势与局限分析">基于ChatGPT等生成式AI辅助计算机领域文献检索的优势与局限分析</a><time datetime="2025-06-15T16:00:00.000Z" title="发表于 2025-06-16 00:00:00">2025-06-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/06/16/%E5%9F%BA%E4%BA%8Ebilibili%E5%93%88%E5%9F%BA%E7%B1%B3%E9%9F%B3%E4%B9%90%E8%A7%86%E9%A2%91%E7%9A%84%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F%E5%88%86%E6%9E%90%E4%B8%8E%E5%88%86%E7%B1%BB%E7%A0%94%E7%A9%B6/" title="基于bilibili哈基米音乐视频的用户画像分析与分类研究">基于bilibili哈基米音乐视频的用户画像分析与分类研究</a><time datetime="2025-06-15T16:00:00.000Z" title="发表于 2025-06-16 00:00:00">2025-06-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/06/06/JavaWeb%E5%A4%8D%E4%B9%A0%E6%8C%87%E5%8C%97/" title="JavaWeb复习指北">JavaWeb复习指北</a><time datetime="2025-06-05T16:00:00.000Z" title="发表于 2025-06-06 00:00:00">2025-06-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/06/01/Codeforces%20Round%201027%20(Div.%203)/" title="Codeforces Round 1027 (Div. 3)">Codeforces Round 1027 (Div. 3)</a><time datetime="2025-05-31T16:00:00.000Z" title="发表于 2025-06-01 00:00:00">2025-06-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/21/%E6%B5%85%E5%B0%9D%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96-%E5%90%8E%E7%AB%AF%E7%AF%87/" title="浅尝苍穹外卖-后端篇">浅尝苍穹外卖-后端篇</a><time datetime="2025-05-20T16:00:00.000Z" title="发表于 2025-05-21 00:00:00">2025-05-21</time></div></div></div></div></div></div></main><footer id="footer" style="background-color: #00bfff;"><div id="footer-wrap"><div class="copyright">&copy;2025 By L4plAce</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">数字，哲学与爱</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'== 'shuoshuo'
+  const dqOption = null
+
+  const destroyDisqusjs = () => {
+    disqusjs.destroy()
+    window.disqusjs = null
+  }
+
+  const themeChange = (el, path) => {
+    destroyDisqusjs()
+    initDisqusjs(el, path)
+  }
+
+  const initDisqusjs = (el = document, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyDisqusjs = () => {
+        destroyDisqusjs()
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    disqusjs = new DisqusJS({
+      shortname: 'l4place',
+      title: '基于ChatGPT等生成式AI辅助计算机领域文献检索的优势与局限分析',
+      apikey: 'x13hKI63LwsTKgH9HQ2fBgsQ39NmUMQVj2awrSVw59kE94ALSCkeV5g1XAQZIpK8',
+      ...dqOption,
+      identifier: isShuoshuo ? path : (dqOption && dqOption.identifier) || '/2025/06/16/%E5%9F%BA%E4%BA%8EChatGPT%E7%AD%89%E7%94%9F%E6%88%90%E5%BC%8FAI%E8%BE%85%E5%8A%A9%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%A2%86%E5%9F%9F%E6%96%87%E7%8C%AE%E6%A3%80%E7%B4%A2%E7%9A%84%E4%BC%98%E5%8A%BF%E4%B8%8E%E5%B1%80%E9%99%90%E5%88%86%E6%9E%90/',
+      url: isShuoshuo ? location.origin + path : (dqOption && dqOption.url) || 'http://www.l4place.icu/2025/06/16/%E5%9F%BA%E4%BA%8EChatGPT%E7%AD%89%E7%94%9F%E6%88%90%E5%BC%8FAI%E8%BE%85%E5%8A%A9%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%A2%86%E5%9F%9F%E6%96%87%E7%8C%AE%E6%A3%80%E7%B4%A2%E7%9A%84%E4%BC%98%E5%8A%BF%E4%B8%8E%E5%B1%80%E9%99%90%E5%88%86%E6%9E%90/'
+    })
+
+    disqusjs.render(el.querySelector('#disqusjs-wrap'))
+
+    btf.addGlobalFn('themeChange', () => themeChange(el, path), 'disqusjs')
+  }
+
+  const loadDisqusjs = async(el, path) => {
+    if (window.disqusJsLoad) initDisqusjs(el, path)
+    else {
+      await btf.getCSS('https://cdn.jsdelivr.net/npm/disqusjs/dist/browser/styles/disqusjs.min.css')
+      await btf.getScript('https://cdn.jsdelivr.net/npm/disqusjs/dist/browser/disqusjs.es2015.umd.min.js')
+      initDisqusjs(el, path)
+      window.disqusJsLoad = true
+    }
+  }
+
+  const getCount = async() => {
+    try {
+      const eleGroup = document.querySelector('#post-meta .disqusjs-comment-count')
+      if (!eleGroup) return
+      const cleanedLinks = eleGroup.href.replace(/#post-comment$/, '')
+
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=l4place&api_key=x13hKI63LwsTKgH9HQ2fBgsQ39NmUMQVj2awrSVw59kE94ALSCkeV5g1XAQZIpK8&thread:link=${cleanedLinks}`,{
+        method: 'GET'
+      })
+      const result = await res.json()
+      const count = result.response.length ? result.response[0].posts : 0
+      eleGroup.textContent = count
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Disqusjs' === 'Disqusjs'
+      ? window.shuoshuoComment = { loadComment: loadDisqusjs }
+      : window.loadOtherComment = loadDisqusjs
+    return
+  }
+
+  if ('Disqusjs' === 'Disqusjs' || !false) {
+    if (false) btf.loadComment(document.getElementById('disqusjs-wrap'), loadDisqusjs)
+    else {
+      loadDisqusjs()
+      
+    }
+  } else {
+    window.loadOtherComment = loadDisqusjs
+  }
+})()</script></div><script>window.newestComments = {
+  changeContent: content => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<code>.*?<\/code>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g, "") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0, 150) + '...'
+    }
+    return content
+  },
+
+  generateHtml: (array, ele) => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class="aside-list-item">'
+
+        if (true && array[i].avatar) {
+          const imgAttr = 'src'
+          const lazyloadNative = ''
+          result += `<a href="${array[i].url}" class="thumbnail"><img ${imgAttr}="${array[i].avatar}" alt="${array[i].nick}" ${lazyloadNative}></a>`
+        }
+
+        result += `<div class="content">
+        <a class="comment" href="${array[i].url}" title="${array[i].content}">${array[i].content}</a>
+        <div class="name"><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += '暂无评论'
+    }
+
+    ele.innerHTML = result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh(ele)
+  },
+
+  newestCommentInit: (name, getComment) => {
+    const $dom = document.querySelector('#card-newest-comments .aside-list')
+    if ($dom) {
+      const data = btf.saveToLocal.get(name)
+      if (data) {
+        newestComments.generateHtml(JSON.parse(data), $dom)
+      } else {
+        getComment($dom)
+      }
+    }
+  },
+
+  run: (name, getComment) => {
+    newestComments.newestCommentInit(name, getComment)
+    btf.addGlobalFn('pjaxComplete', () => newestComments.newestCommentInit(name, getComment), name)
+  }
+}</script><script>window.addEventListener('load', () => {
+  const keyName = 'disqus-newest-comments'
+  const { changeContent, generateHtml, run } = window.newestComments
+
+  const getComment = ele => {
+    fetch('https://disqus.com/api/3.0/forums/listPosts.json?forum=l4place&related=thread&limit=6&api_key=x13hKI63LwsTKgH9HQ2fBgsQ39NmUMQVj2awrSVw59kE94ALSCkeV5g1XAQZIpK8')
+      .then(response => response.json())
+      .then(data => {
+        const disqusArray = data.response.map(item => {
+          return {
+            'avatar': item.author.avatar.cache,
+            'content': changeContent(item.message),
+            'nick': item.author.name,
+            'url': item.url,
+            'date': item.createdAt
+          }
+        })
+
+        btf.saveToLocal.set(keyName, JSON.stringify(disqusArray), 10/(60*24))
+        generateHtml(disqusArray, ele)
+      }).catch(e => {
+        console.error(e)
+        ele.textContent= "无法获取评论，请确认相关配置是否正确"
+      })
+  }
+
+  run(keyName, getComment)
+})</script><script defer src="https://fastly.jsdelivr.net/npm/live2d-widgets@0/autoload.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="true"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script>(() => {
+  const destroyAplayer = () => {
+    if (window.aplayers) {
+      for (let i = 0; i < window.aplayers.length; i++) {
+        if (!window.aplayers[i].options.fixed) {
+          window.aplayers[i].destroy()
+        }
+      }
+    }
+  }
+
+  const runMetingJS = () => {
+    typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+  }
+
+  btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
+  btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
+})()</script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: true,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      pjax.loadUrl('/404.html')
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/lite/builds/browser.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script></div></div></body></html>
