@@ -1,0 +1,512 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Codeforces Round 1027 (Div. 3) | L4plAce</title><meta name="author" content="L4plAce"><meta name="copyright" content="L4plAce"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="article">
+<meta property="og:title" content="Codeforces Round 1027 (Div. 3)">
+<meta property="og:url" content="http://www.l4place.icu/2025/06/01/Archive/Codeforces%20Round%201027%20(Div.%203)/index.html">
+<meta property="og:site_name" content="L4plAce">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://www.l4place.icu/img/avatar.jpg">
+<meta property="article:published_time" content="2025-05-31T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-07-06T14:51:38.728Z">
+<meta property="article:author" content="L4plAce">
+<meta property="article:tag" content="CodeForces">
+<meta property="article:tag" content="题解">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://www.l4place.icu/img/avatar.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Codeforces Round 1027 (Div. 3)",
+  "url": "http://www.l4place.icu/2025/06/01/Archive/Codeforces%20Round%201027%20(Div.%203)/",
+  "image": "http://www.l4place.icu/img/avatar.jpg",
+  "datePublished": "2025-05-31T16:00:00.000Z",
+  "dateModified": "2025-07-06T14:51:38.728Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "l4place",
+      "url": "http://www.l4place.icu/blog.l4place.icu"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://www.l4place.icu/2025/06/01/Archive/Codeforces%20Round%201027%20(Div.%203)/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//www.clarity.ms"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="codeva-pm3JLit8G2"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?39def90aa4d3003d2e4e8308e7a8c9f3";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+btf.addGlobalFn('pjaxComplete', () => {
+  _hmt.push(['_trackPageview',window.location.pathname])
+}, 'baidu_analytics')
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-18VE0KD5YB"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', 'G-18VE0KD5YB')
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', 'G-18VE0KD5YB', {'page_path': window.location.pathname})
+}, 'google_analytics')
+</script><script>(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "q81b5s7cx2");
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: {"appId":"43KWPP3572","apiKey":"ee8951db0bf1102393ba02871176539f","indexName":"new_blog","hitsPerPage":6,"languages":{"input_placeholder":"搜索文章","hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，耗时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Codeforces Round 1027 (Div. 3)',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-color: #F5F5DC;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">24</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-compass"></i><span> 导航</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link"><i class="fa-fw fas fas fa-link"></i><span> 友情链接</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://l4p-bucket-1.oss-cn-shenzhen.aliyuncs.com/img/index_top_img.webp);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">L4plAce</span></a><a class="nav-page-title" href="/"><span class="site-name">Codeforces Round 1027 (Div. 3)</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-compass"></i><span> 导航</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link"><i class="fa-fw fas fas fa-link"></i><span> 友情链接</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">Codeforces Round 1027 (Div. 3)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-05-31T16:00:00.000Z" title="发表于 2025-06-01 00:00:00">2025-06-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-07-06T14:51:38.728Z" title="更新于 2025-07-06 22:51:38">2025-07-06</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>9分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><div id="post-outdate-notice" data="{&quot;limitDay&quot;:365,&quot;messagePrev&quot;:&quot;自上次更新已经过了&quot;,&quot;messageNext&quot;:&quot;天，文章内容可能过期了哦！&quot;,&quot;postUpdate&quot;:&quot;2025-07-06 22:51:38&quot;}" hidden></div><h2 id="A-Square-Year"><a href="#A-Square-Year" class="headerlink" title="A. Square Year"></a>A. Square Year</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span>  </span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;  </span><br><span class="line"><span class="type">int</span> t;  </span><br><span class="line">string s;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">f</span><span class="params">(<span class="type">int</span> num)</span> </span>&#123;  </span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;= <span class="number">100</span>; ++i) &#123;  </span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt;= <span class="number">100</span>; ++j) &#123;  </span><br><span class="line">            <span class="keyword">if</span> ((i + j) * (i + j) == num) &#123;  </span><br><span class="line">                cout &lt;&lt; i &lt;&lt; <span class="string">&#x27; &#x27;</span> &lt;&lt; j &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;  </span><br><span class="line">                <span class="keyword">return</span>;  </span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">    cout &lt;&lt; <span class="number">-1</span> &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int32_t</span> <span class="title">main</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">    cin &gt;&gt; t;  </span><br><span class="line">    <span class="keyword">while</span> (t--) &#123;  </span><br><span class="line">        cin &gt;&gt; s;  </span><br><span class="line">        <span class="type">int</span> num = <span class="built_in">stoi</span>(s);  </span><br><span class="line">        <span class="built_in">f</span>(num);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="B-Not-Quite-a-Palindromic-String"><a href="#B-Not-Quite-a-Palindromic-String" class="headerlink" title="B. Not Quite a Palindromic String"></a>B. Not Quite a Palindromic String</h2><p><img src="https://l4p-bucket-1.oss-cn-shenzhen.aliyuncs.com/img/7c9c61ed19a2f2c3c9efc092508abbac_MD5.jpeg"></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span>  </span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;  </span><br><span class="line">  </span><br><span class="line"><span class="type">int</span> t, n, k;  </span><br><span class="line">string s;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">get_pair</span><span class="params">(<span class="type">const</span> string&amp; str)</span> </span>&#123;  </span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span>, j = str.<span class="built_in">length</span>() - <span class="number">1</span>, cnt = <span class="number">0</span>;  </span><br><span class="line">    <span class="keyword">while</span> (i &lt; j) &#123;  </span><br><span class="line">        <span class="keyword">if</span> (str[i] == str[j]) cnt++;  </span><br><span class="line">        i++;  </span><br><span class="line">        j--;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">return</span> cnt;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int32_t</span> <span class="title">main</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>), cin.<span class="built_in">tie</span>(<span class="number">0</span>), cout.<span class="built_in">tie</span>(<span class="number">0</span>);  </span><br><span class="line">    cin &gt;&gt; t;  </span><br><span class="line">    <span class="keyword">while</span> (t--) &#123;  </span><br><span class="line">        cin &gt;&gt; n &gt;&gt; k &gt;&gt; s;  </span><br><span class="line">  </span><br><span class="line">        <span class="type">int</span> c0 = <span class="built_in">count</span>(s.<span class="built_in">begin</span>(), s.<span class="built_in">end</span>(), <span class="string">&#x27;0&#x27;</span>);  </span><br><span class="line">        <span class="type">int</span> c1 = n - c0;  </span><br><span class="line">  </span><br><span class="line">        <span class="type">int</span> max_pair = (c0 / <span class="number">2</span>) + (c1 / <span class="number">2</span>);  </span><br><span class="line">        <span class="type">int</span> min_pair = <span class="built_in">abs</span>(c0 - c1) / <span class="number">2</span>;  </span><br><span class="line">  </span><br><span class="line">        <span class="keyword">if</span> (k &lt; min_pair || k &gt; max_pair) &#123;  </span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;No\n&quot;</span>;  </span><br><span class="line">            <span class="keyword">continue</span>;  </span><br><span class="line">        &#125;  </span><br><span class="line">  </span><br><span class="line">        <span class="type">int</span> pairs = <span class="built_in">get_pair</span>(s);  </span><br><span class="line">        <span class="keyword">if</span> ((<span class="built_in">abs</span>(pairs - k) % <span class="number">2</span>) == <span class="number">0</span>)  </span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;Yes\n&quot;</span>;  </span><br><span class="line">        <span class="keyword">else</span>  </span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;No\n&quot;</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="C-Need-More-Arrays"><a href="#C-Need-More-Arrays" class="headerlink" title="C. Need More Arrays"></a>C. Need More Arrays</h2><p><img src="https://l4p-bucket-1.oss-cn-shenzhen.aliyuncs.com/img/52d72b47ce291383dbbfd8505cbf6e79_MD5.jpeg"></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span>  </span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);  </span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);  </span><br><span class="line">  </span><br><span class="line">    <span class="type">int</span> t;  </span><br><span class="line">    cin &gt;&gt; t;  </span><br><span class="line">    <span class="keyword">while</span> (t--) &#123;  </span><br><span class="line">        <span class="type">int</span> n;  </span><br><span class="line">        cin &gt;&gt; n;  </span><br><span class="line">  </span><br><span class="line">        <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">a</span><span class="params">(n)</span></span>;  </span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;  </span><br><span class="line">            cin &gt;&gt; a[i];  </span><br><span class="line">        &#125;  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 如果 n=0，直接输出 0        if (n == 0) &#123;  </span></span><br><span class="line">            cout &lt;&lt; <span class="number">0</span> &lt;&lt; <span class="string">&quot;\n&quot;</span>;  </span><br><span class="line">            <span class="keyword">continue</span>;  </span><br><span class="line">        &#125;  </span><br><span class="line">  </span><br><span class="line">        <span class="type">long</span> <span class="type">long</span> answer = <span class="number">0</span>;  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 记录当前块（“相邻数值差为 1 的区段”）的长度  </span></span><br><span class="line">        <span class="type">int</span> currentBlockLen = <span class="number">0</span>;  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// lastDistinct = 上一个已处理的“不同的数值”；初始化为 a[0]-2，  </span></span><br><span class="line">        <span class="comment">// 使得第一个数值 a[0] 一定视作新块的开始  </span></span><br><span class="line">        <span class="type">int</span> lastDistinct = a[<span class="number">0</span>] - <span class="number">2</span>;  </span><br><span class="line">  </span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;  </span><br><span class="line">            <span class="comment">// 跳过重复值，只要与上一个不同就算一次“新数值”  </span></span><br><span class="line">            <span class="keyword">if</span> (i &gt; <span class="number">0</span> &amp;&amp; a[i] == a[i<span class="number">-1</span>]) &#123;  </span><br><span class="line">                <span class="keyword">continue</span>;  </span><br><span class="line">            &#125;  </span><br><span class="line">            <span class="type">int</span> v = a[i];  </span><br><span class="line">            <span class="keyword">if</span> (v - lastDistinct == <span class="number">1</span>) &#123;  </span><br><span class="line">                <span class="comment">// 与上一个不同数值正好相差 1，属于同一个连续块  </span></span><br><span class="line">                currentBlockLen++;  </span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;  </span><br><span class="line">                <span class="comment">// 遇到新的块（或首块），先把前一块的贡献加上，再开启新块  </span></span><br><span class="line">                <span class="keyword">if</span> (currentBlockLen &gt; <span class="number">0</span>) &#123;  </span><br><span class="line">                    answer += (currentBlockLen + <span class="number">1</span>) / <span class="number">2</span>;  </span><br><span class="line">                &#125;  </span><br><span class="line">                currentBlockLen = <span class="number">1</span>;  <span class="comment">// 本次 v 自己作为新块的第一个元素  </span></span><br><span class="line">            &#125;  </span><br><span class="line">            lastDistinct = v;  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="comment">// 最后一个块的贡献  </span></span><br><span class="line">        <span class="keyword">if</span> (currentBlockLen &gt; <span class="number">0</span>) &#123;  </span><br><span class="line">            answer += (currentBlockLen + <span class="number">1</span>) / <span class="number">2</span>;  </span><br><span class="line">        &#125;  </span><br><span class="line">  </span><br><span class="line">        cout &lt;&lt; answer &lt;&lt; <span class="string">&quot;\n&quot;</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="D-Come-a-Little-Closer"><a href="#D-Come-a-Little-Closer" class="headerlink" title="D. Come a Little Closer"></a>D. Come a Little Closer</h2><blockquote>
+<p>你最多可以将一个怪物移动到场上未被其他怪物占据的任意一个格子一次。<br>之后，你必须选择场上的一个矩形；选中矩形内的所有怪物将被摧毁。你必须为选中矩形内的每个格子支付 1 个金币。<br>你的任务是找到摧毁所有怪物所需的最少金币数。</p>
+</blockquote>
+<p>只需要每次记录 怪物群构建的矩形 的四个角坐标即可？<br>存在某个点，与角点交换后使矩形面积变小。目的是找到这个点。<br><img src="https://l4p-bucket-1.oss-cn-shenzhen.aliyuncs.com/img/7b7fa537c1a322a7577ce274cf68a1fc_MD5.jpeg"><br>时间不够了，寄了。</p>
+<h3 id="抄"><a href="#抄" class="headerlink" title="抄"></a>抄</h3><h4 id="代码要点说明"><a href="#代码要点说明" class="headerlink" title="代码要点说明"></a>代码要点说明</h4><ol>
+<li><p><strong>预处理 <code>x_min, x_min2, cntMinX, x_max, x_max2, cntMaxX</code></strong></p>
+<ul>
+<li><p><code>x_min</code> 与 <code>cntMinX</code>：记录当前最小的 $x$ 值及其出现次数。</p>
+</li>
+<li><p><code>x_min2</code> ：记录次小的 $x$ 值（当且仅当该最小值只出现 1 次且正好删掉时，新的最小才会降到次小）。</p>
+</li>
+<li><p>同理维护 <code>x_max, cntMaxX, x_max2</code>，以及对 $y$ 方向的同样四个变量。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>删除第 $i$ 只怪物后四条边的更新</strong></p>
+<ul>
+<li><p>如果当前点的 $x_i \neq x_{\min}$，那么剩余的 $n-1$ 点的最小 $x$ 依然是 $x_{\min}$；否则要看 <code>cntMinX</code>。</p>
+</li>
+<li><p>如果 <code>cntMinX&gt;=2</code>，说明即使删掉一个最小值，剩余还有其他等于 $x_{\min}$ 的点，边界不变；<br>  如果 <code>cntMinX==1</code>，删除它之后只能退到第二小 <code>x_min2</code> 作为新边界。</p>
+</li>
+<li><p>右边界、$y$ 方向上下边界同理。这样常数步就算出了剩余 $n-1$ 只怪物的“最小包围矩形”边界 $(x_L,x_R,y_L,y_R)$。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>判断包围矩形内部是否已被占满</strong></p>
+<ul>
+<li><p>记剩余 $(n-1)$ 只怪物的包围矩形宽 $w&#x3D;x_R-x_L+1$，高 $h&#x3D;y_R-y_L+1$，则该矩形格子总数 $w\times h$。</p>
+</li>
+<li><p>若 $(n-1) &lt; w,h$，说明矩形内至少有一个空格，可以把被删除的怪物放在空格里，“不扩充”仍只需付 $(w\times h)$ 个金币。</p>
+</li>
+<li><p>若 $(n-1) &#x3D; w,h$，说明所有格子正好被其他怪物占完，放不下，多一只就必须把矩形在宽或高方向至少向外扩 1 格，得到的最少花费是 $\min((w+1)\times h,;w\times(h+1))$。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>答案</strong></p>
+<ul>
+<li><p>枚举所有 $i&#x3D;1\ldots n$，取上面计算得到的最小代价即可。</p>
+</li>
+<li><p>若 $n&#x3D;1$，直接输出 1。</p>
+</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span>  </span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;  </span><br><span class="line">  </span><br><span class="line"><span class="comment">/*  </span></span><br><span class="line"><span class="comment">  “D. Come a Little Closer” 修正版：  </span></span><br><span class="line"><span class="comment">  </span></span><br><span class="line"><span class="comment">  思路：    对每个测试用例，先一次遍历收集所有点的：  </span></span><br><span class="line"><span class="comment">      x_min, x_min2, cntMinX, x_max, x_max2, cntMaxX;      y_min, y_min2, cntMinY, y_max, y_max2, cntMaxY;    然后再对每只怪物 i 枚举“把它移动”的情况：  </span></span><br><span class="line"><span class="comment">      1. 删除它后，剩余 n-1 只怪物的最小包围矩形边界 (xL, xR, yL, yR)；  </span></span><br><span class="line"><span class="comment">      2. 记 w = xR - xL + 1, h = yR - yL + 1,         如果 n-1 &lt; w*h，则答案候选 = w*h；否则（n-1 == w*h），候选 = min((w+1)*h, w*(h+1))。  </span></span><br><span class="line"><span class="comment">    取所有候选最小即为最终答案。  </span></span><br><span class="line"><span class="comment">  时间复杂度：每个测试用例 O(n)，总和 ∑n ≤ 2×10^5。  </span></span><br><span class="line"><span class="comment">*/</span>  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);  </span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);  </span><br><span class="line">  </span><br><span class="line">    <span class="type">int</span> T;  </span><br><span class="line">    cin &gt;&gt; T;  </span><br><span class="line">    <span class="keyword">while</span> (T--) &#123;  </span><br><span class="line">        <span class="type">int</span> n;  </span><br><span class="line">        cin &gt;&gt; n;  </span><br><span class="line">  </span><br><span class="line">        <span class="function">vector&lt;<span class="type">long</span> <span class="type">long</span>&gt; <span class="title">X</span><span class="params">(n)</span>, <span class="title">Y</span><span class="params">(n)</span></span>;  </span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;  </span><br><span class="line">            cin &gt;&gt; X[i] &gt;&gt; Y[i];  </span><br><span class="line">        &#125;  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// n=1 时单独处理：无论如何也得选一个 1×1 的矩形  </span></span><br><span class="line">        <span class="keyword">if</span> (n == <span class="number">1</span>) &#123;  </span><br><span class="line">            cout &lt;&lt; <span class="number">1</span> &lt;&lt; <span class="string">&quot;\n&quot;</span>;  </span><br><span class="line">            <span class="keyword">continue</span>;  </span><br><span class="line">        &#125;  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 初始化 x 方向的极值与次极值及其计数  </span></span><br><span class="line">        <span class="type">const</span> <span class="type">long</span> <span class="type">long</span> INF = (<span class="type">long</span> <span class="type">long</span>)<span class="number">4e18</span>;  </span><br><span class="line">        <span class="type">long</span> <span class="type">long</span> x_min = INF,  x_min2 = INF;  </span><br><span class="line">        <span class="type">long</span> <span class="type">long</span> x_max = -INF, x_max2 = -INF;  </span><br><span class="line">        <span class="type">int</span> cntMinX = <span class="number">0</span>, cntMaxX = <span class="number">0</span>;  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 初始化 y 方向的极值与次极值及其计数  </span></span><br><span class="line">        <span class="type">long</span> <span class="type">long</span> y_min = INF,  y_min2 = INF;  </span><br><span class="line">        <span class="type">long</span> <span class="type">long</span> y_max = -INF, y_max2 = -INF;  </span><br><span class="line">        <span class="type">int</span> cntMinY = <span class="number">0</span>, cntMaxY = <span class="number">0</span>;  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 第一次遍历：统计 x_min, x_min2, cntMinX, x_max, x_max2, cntMaxX；同理 y        for (int i = 0; i &lt; n; i++) &#123;  </span></span><br><span class="line">            <span class="type">long</span> <span class="type">long</span> x = X[i], y = Y[i];  </span><br><span class="line">  </span><br><span class="line">            <span class="comment">// —— 处理 x 方向最小值／次最小值 及 计数 ——            if (x &lt; x_min) &#123;  </span></span><br><span class="line">                x_min2 = x_min;  </span><br><span class="line">                x_min  = x;  </span><br><span class="line">                cntMinX = <span class="number">1</span>;  </span><br><span class="line">            &#125;  </span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (x == x_min) &#123;  </span><br><span class="line">                cntMinX++;  </span><br><span class="line">            &#125;  </span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (x &lt; x_min2) &#123;  </span><br><span class="line">                x_min2 = x;  </span><br><span class="line">            &#125;  </span><br><span class="line">  </span><br><span class="line">            <span class="comment">// —— 处理 x 方向最大值／次最大值 及 计数 ——            if (x &gt; x_max) &#123;  </span></span><br><span class="line">                x_max2 = x_max;  </span><br><span class="line">                x_max  = x;  </span><br><span class="line">                cntMaxX = <span class="number">1</span>;  </span><br><span class="line">            &#125;  </span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (x == x_max) &#123;  </span><br><span class="line">                cntMaxX++;  </span><br><span class="line">            &#125;  </span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (x &gt; x_max2) &#123;  </span><br><span class="line">                x_max2 = x;  </span><br><span class="line">            &#125;  </span><br><span class="line">  </span><br><span class="line">            <span class="comment">// —— 处理 y 方向最小值／次最小值 及 计数 ——            if (y &lt; y_min) &#123;  </span></span><br><span class="line">                y_min2 = y_min;  </span><br><span class="line">                y_min  = y;  </span><br><span class="line">                cntMinY = <span class="number">1</span>;  </span><br><span class="line">            &#125;  </span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (y == y_min) &#123;  </span><br><span class="line">                cntMinY++;  </span><br><span class="line">            &#125;  </span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (y &lt; y_min2) &#123;  </span><br><span class="line">                y_min2 = y;  </span><br><span class="line">            &#125;  </span><br><span class="line">  </span><br><span class="line">            <span class="comment">// —— 处理 y 方向最大值／次最大值 及 计数 ——            if (y &gt; y_max) &#123;  </span></span><br><span class="line">                y_max2 = y_max;  </span><br><span class="line">                y_max  = y;  </span><br><span class="line">                cntMaxY = <span class="number">1</span>;  </span><br><span class="line">            &#125;  </span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (y == y_max) &#123;  </span><br><span class="line">                cntMaxY++;  </span><br><span class="line">            &#125;  </span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (y &gt; y_max2) &#123;  </span><br><span class="line">                y_max2 = y;  </span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 枚举“删除第 i 只怪物”后需要的最小代价，取最小  </span></span><br><span class="line">        <span class="type">long</span> <span class="type">long</span> answer = LLONG_MAX;  </span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;  </span><br><span class="line">            <span class="type">long</span> <span class="type">long</span> x = X[i], y = Y[i];  </span><br><span class="line">  </span><br><span class="line">            <span class="comment">// 1. 计算删除它后，剩余点的 x 左边界 new_xL            long long new_xL;  </span></span><br><span class="line">            <span class="keyword">if</span> (x != x_min) &#123;  </span><br><span class="line">                new_xL = x_min;  </span><br><span class="line">            &#125;  </span><br><span class="line">            <span class="keyword">else</span> &#123;  </span><br><span class="line">                <span class="comment">// x == x_min  </span></span><br><span class="line">                <span class="keyword">if</span> (cntMinX &gt;= <span class="number">2</span>) new_xL = x_min;  </span><br><span class="line">                <span class="keyword">else</span>              new_xL = x_min2;  </span><br><span class="line">            &#125;  </span><br><span class="line">  </span><br><span class="line">            <span class="comment">// 2. 删除它后，剩余点的 x 右边界 new_xR            long long new_xR;  </span></span><br><span class="line">            <span class="keyword">if</span> (x != x_max) &#123;  </span><br><span class="line">                new_xR = x_max;  </span><br><span class="line">            &#125;  </span><br><span class="line">            <span class="keyword">else</span> &#123;  </span><br><span class="line">                <span class="comment">// x == x_max  </span></span><br><span class="line">                <span class="keyword">if</span> (cntMaxX &gt;= <span class="number">2</span>) new_xR = x_max;  </span><br><span class="line">                <span class="keyword">else</span>              new_xR = x_max2;  </span><br><span class="line">            &#125;  </span><br><span class="line">  </span><br><span class="line">            <span class="comment">// 3. 删除它后，剩余点的 y 下边界 new_yL            long long new_yL;  </span></span><br><span class="line">            <span class="keyword">if</span> (y != y_min) &#123;  </span><br><span class="line">                new_yL = y_min;  </span><br><span class="line">            &#125;  </span><br><span class="line">            <span class="keyword">else</span> &#123;  </span><br><span class="line">                <span class="keyword">if</span> (cntMinY &gt;= <span class="number">2</span>) new_yL = y_min;  </span><br><span class="line">                <span class="keyword">else</span>              new_yL = y_min2;  </span><br><span class="line">            &#125;  </span><br><span class="line">  </span><br><span class="line">            <span class="comment">// 4. 删除它后，剩余点的 y 上边界 new_yR            long long new_yR;  </span></span><br><span class="line">            <span class="keyword">if</span> (y != y_max) &#123;  </span><br><span class="line">                new_yR = y_max;  </span><br><span class="line">            &#125;  </span><br><span class="line">            <span class="keyword">else</span> &#123;  </span><br><span class="line">                <span class="keyword">if</span> (cntMaxY &gt;= <span class="number">2</span>) new_yR = y_max;  </span><br><span class="line">                <span class="keyword">else</span>              new_yR = y_max2;  </span><br><span class="line">            &#125;  </span><br><span class="line">  </span><br><span class="line">            <span class="comment">// 计算剩余 n-1 个点的包围矩形尺寸  </span></span><br><span class="line">            <span class="type">long</span> <span class="type">long</span> w = new_xR - new_xL + <span class="number">1</span>;  <span class="comment">// 宽  </span></span><br><span class="line">            <span class="type">long</span> <span class="type">long</span> h = new_yR - new_yL + <span class="number">1</span>;  <span class="comment">// 高  </span></span><br><span class="line">            <span class="type">long</span> <span class="type">long</span> area_base = w * h;  </span><br><span class="line">  </span><br><span class="line">            <span class="comment">// 如果 (n-1) &lt; w*h，说明矩形内部有空格，不需要扩充  </span></span><br><span class="line">            <span class="comment">// 否则 (n-1) == w*h，矩形被完全占满，必须在 w 或 h 上扩充 1            long long cost_i;  </span></span><br><span class="line">            <span class="keyword">if</span> ((<span class="type">long</span> <span class="type">long</span>)(n - <span class="number">1</span>) &lt; area_base) &#123;  </span><br><span class="line">                cost_i = area_base;  </span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;  </span><br><span class="line">                <span class="comment">// 拆不开只能扩充  </span></span><br><span class="line">                cost_i = <span class="built_in">min</span>( (w + <span class="number">1</span>) * h,  w * (h + <span class="number">1</span>) );  </span><br><span class="line">            &#125;  </span><br><span class="line">  </span><br><span class="line">            answer = <span class="built_in">min</span>(answer, cost_i);  </span><br><span class="line">        &#125;  </span><br><span class="line">  </span><br><span class="line">        cout &lt;&lt; answer &lt;&lt; <span class="string">&quot;\n&quot;</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="blog.l4place.icu">l4place</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://www.l4place.icu/2025/06/01/Archive/Codeforces%20Round%201027%20(Div.%203)/">http://www.l4place.icu/2025/06/01/Archive/Codeforces%20Round%201027%20(Div.%203)/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">除特別声明外，本博客所有文章均遵守 WTFPL 许可。</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/CodeForces/">CodeForces</a><a class="post-meta__tags" href="/tags/%E9%A2%98%E8%A7%A3/">题解</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2025/06/06/Archive/JavaWeb%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/" title="JavaWeb期末复习"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">JavaWeb期末复习</div></div><div class="info-2"><div class="info-item-1">来自底层的魅力：Servlet和它的子子孙孙</div></div></div></a><a class="pagination-related" href="/2025/05/21/Archive/%E5%B0%8F%E5%88%BB%E4%B9%9F%E6%83%B3%E5%AD%A6%E7%88%AA%E5%93%87%E4%B9%8B%E6%B5%85%E5%B0%9D%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/" title="小刻也想学爪哇之浅尝苍穹外卖"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">小刻也想学爪哇之浅尝苍穹外卖</div></div><div class="info-2"><div class="info-item-1">但是一些工程化的思想却流入了我的大脑，让我在余下的时间思考工程化的意义。</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2025/04/24/Archive/Codeforces%20Round%201017%20(Div.%204)/" title="Codeforces Round 1017 (Div. 4)"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-04-24</div><div class="info-item-2">Codeforces Round 1017 (Div. 4)</div></div><div class="info-2"><div class="info-item-1">Solutions in Codeforces Round 1017 (Div. 4)</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="disqusjs-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">L4plAce</div><div class="author-info-description">Laplace，逆熵的妖怪</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">24</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/L4plAcEee"><i class="fab fa-github"></i><span>View in Github</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">代码在指尖流动...</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#A-Square-Year"><span class="toc-number">1.</span> <span class="toc-text">A. Square Year</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#B-Not-Quite-a-Palindromic-String"><span class="toc-number">2.</span> <span class="toc-text">B. Not Quite a Palindromic String</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#C-Need-More-Arrays"><span class="toc-number">3.</span> <span class="toc-text">C. Need More Arrays</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#D-Come-a-Little-Closer"><span class="toc-number">4.</span> <span class="toc-text">D. Come a Little Closer</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%84"><span class="toc-number">4.1.</span> <span class="toc-text">抄</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E8%A6%81%E7%82%B9%E8%AF%B4%E6%98%8E"><span class="toc-number">4.1.1.</span> <span class="toc-text">代码要点说明</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/08/05/Archive/AC%E8%87%AA%E5%8A%A8%E6%9C%BA/" title="AC自动机">AC自动机</a><time datetime="2025-08-04T16:00:00.000Z" title="发表于 2025-08-05 00:00:00">2025-08-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/08/05/Archive/MiniMax%E6%90%9C%E7%B4%A2%E6%96%B9%E6%B3%95/" title="MiniMax搜索方法">MiniMax搜索方法</a><time datetime="2025-08-04T16:00:00.000Z" title="发表于 2025-08-05 00:00:00">2025-08-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/07/10/%E4%B8%80%E4%BA%9B%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/" title="一些资源分享">一些资源分享</a><time datetime="2025-07-09T16:00:00.000Z" title="发表于 2025-07-10 00:00:00">2025-07-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/07/10/Archive/%E5%86%99%E4%B8%80%E4%B8%AAbaka%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82%E7%9A%84Brainfuck%E8%A7%A3%E9%87%8A%E5%99%A8/" title="写一个baka也能看懂的Brainfuck解释器">写一个baka也能看懂的Brainfuck解释器</a><time datetime="2025-07-09T16:00:00.000Z" title="发表于 2025-07-10 00:00:00">2025-07-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/07/07/Archive/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%EF%BC%8C%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%93-0x00/" title="算法学习，个人总结-0x00">算法学习，个人总结-0x00</a><time datetime="2025-07-06T16:00:00.000Z" title="发表于 2025-07-07 00:00:00">2025-07-07</time></div></div></div></div></div></div></main><footer id="footer" style="background-color: #00bfff;"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;2025 By L4plAce</span></div><div class="footer_custom_text">数字，哲学与爱</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'== 'shuoshuo'
+  const dqOption = null
+
+  const destroyDisqusjs = () => {
+    disqusjs.destroy()
+    window.disqusjs = null
+  }
+
+  const themeChange = (el, path) => {
+    destroyDisqusjs()
+    initDisqusjs(el, path)
+  }
+
+  const initDisqusjs = (el = document, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyDisqusjs = () => {
+        destroyDisqusjs()
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    disqusjs = new DisqusJS({
+      shortname: 'l4place',
+      title: 'Codeforces Round 1027 (Div. 3)',
+      apikey: 'x13hKI63LwsTKgH9HQ2fBgsQ39NmUMQVj2awrSVw59kE94ALSCkeV5g1XAQZIpK8',
+      ...dqOption,
+      identifier: isShuoshuo ? path : (dqOption && dqOption.identifier) || '/2025/06/01/Archive/Codeforces%20Round%201027%20(Div.%203)/',
+      url: isShuoshuo ? location.origin + path : (dqOption && dqOption.url) || 'http://www.l4place.icu/2025/06/01/Archive/Codeforces%20Round%201027%20(Div.%203)/'
+    })
+
+    disqusjs.render(el.querySelector('#disqusjs-wrap'))
+
+    btf.addGlobalFn('themeChange', () => themeChange(el, path), 'disqusjs')
+  }
+
+  const loadDisqusjs = async(el, path) => {
+    if (window.disqusJsLoad) initDisqusjs(el, path)
+    else {
+      await btf.getCSS('https://cdn.jsdelivr.net/npm/disqusjs/dist/browser/styles/disqusjs.min.css')
+      await btf.getScript('https://cdn.jsdelivr.net/npm/disqusjs/dist/browser/disqusjs.es2015.umd.min.js')
+      initDisqusjs(el, path)
+      window.disqusJsLoad = true
+    }
+  }
+
+  const getCount = async() => {
+    try {
+      const eleGroup = document.querySelector('#post-meta .disqusjs-comment-count')
+      if (!eleGroup) return
+      const cleanedLinks = eleGroup.href.replace(/#post-comment$/, '')
+
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=l4place&api_key=x13hKI63LwsTKgH9HQ2fBgsQ39NmUMQVj2awrSVw59kE94ALSCkeV5g1XAQZIpK8&thread:link=${cleanedLinks}`,{
+        method: 'GET'
+      })
+      const result = await res.json()
+      const count = result.response.length ? result.response[0].posts : 0
+      eleGroup.textContent = count
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Disqusjs' === 'Disqusjs'
+      ? window.shuoshuoComment = { loadComment: loadDisqusjs }
+      : window.loadOtherComment = loadDisqusjs
+    return
+  }
+
+  if ('Disqusjs' === 'Disqusjs' || !false) {
+    if (false) btf.loadComment(document.getElementById('disqusjs-wrap'), loadDisqusjs)
+    else {
+      loadDisqusjs()
+      
+    }
+  } else {
+    window.loadOtherComment = loadDisqusjs
+  }
+})()</script></div><script>window.newestComments = {
+  changeContent: content => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<code>.*?<\/code>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g, "") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0, 150) + '...'
+    }
+    return content
+  },
+
+  generateHtml: (array, ele) => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class="aside-list-item">'
+
+        if (true && array[i].avatar) {
+          const imgAttr = 'src'
+          const lazyloadNative = ''
+          result += `<a href="${array[i].url}" class="thumbnail"><img ${imgAttr}="${array[i].avatar}" alt="${array[i].nick}" ${lazyloadNative}></a>`
+        }
+
+        result += `<div class="content">
+        <a class="comment" href="${array[i].url}" title="${array[i].content}">${array[i].content}</a>
+        <div class="name"><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += '暂无评论'
+    }
+
+    ele.innerHTML = result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh(ele)
+  },
+
+  newestCommentInit: (name, getComment) => {
+    const $dom = document.querySelector('#card-newest-comments .aside-list')
+    if ($dom) {
+      const data = btf.saveToLocal.get(name)
+      if (data) {
+        newestComments.generateHtml(JSON.parse(data), $dom)
+      } else {
+        getComment($dom)
+      }
+    }
+  },
+
+  run: (name, getComment) => {
+    newestComments.newestCommentInit(name, getComment)
+    btf.addGlobalFn('pjaxComplete', () => newestComments.newestCommentInit(name, getComment), name)
+  }
+}</script><script>window.addEventListener('load', () => {
+  const keyName = 'disqus-newest-comments'
+  const { changeContent, generateHtml, run } = window.newestComments
+
+  const getComment = ele => {
+    fetch('https://disqus.com/api/3.0/forums/listPosts.json?forum=l4place&related=thread&limit=6&api_key=x13hKI63LwsTKgH9HQ2fBgsQ39NmUMQVj2awrSVw59kE94ALSCkeV5g1XAQZIpK8')
+      .then(response => response.json())
+      .then(data => {
+        const disqusArray = data.response.map(item => {
+          return {
+            'avatar': item.author.avatar.cache,
+            'content': changeContent(item.message),
+            'nick': item.author.name,
+            'url': item.url,
+            'date': item.createdAt
+          }
+        })
+
+        btf.saveToLocal.set(keyName, JSON.stringify(disqusArray), 10/(60*24))
+        generateHtml(disqusArray, ele)
+      }).catch(e => {
+        console.error(e)
+        ele.textContent= "无法获取评论，请确认相关配置是否正确"
+      })
+  }
+
+  run(keyName, getComment)
+})</script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="true"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script>(() => {
+  const destroyAplayer = () => {
+    if (window.aplayers) {
+      for (let i = 0; i < window.aplayers.length; i++) {
+        if (!window.aplayers[i].options.fixed) {
+          window.aplayers[i].destroy()
+        }
+      }
+    }
+  }
+
+  const runMetingJS = () => {
+    typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+  }
+
+  btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
+  btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
+})()</script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: true,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      const usePjax = true
+      false
+        ? (usePjax ? pjax.loadUrl('/404.html') : window.location.href = '/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/lite/builds/browser.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script></div></div></body></html>
